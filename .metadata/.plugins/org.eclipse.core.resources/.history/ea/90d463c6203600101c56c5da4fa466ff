@@ -1,0 +1,7 @@
+package com.mediLabo.noteApi.service;
+
+public interface NoteService {
+	
+	Note getNoteById(int id);
+
+}

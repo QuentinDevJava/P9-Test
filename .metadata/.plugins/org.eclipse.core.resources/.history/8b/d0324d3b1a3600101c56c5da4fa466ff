@@ -1,0 +1,10 @@
+package com.mediLabo.patient;
+
+import java.util.List;
+
+import lombok.Data;
+
+@Data
+public class EmbeddedPatients {
+	private List<Patient> patients;
+}

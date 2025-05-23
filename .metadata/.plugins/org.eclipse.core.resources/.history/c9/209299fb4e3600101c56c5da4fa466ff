@@ -1,0 +1,5 @@
+package com.mediLabo.ui.controller;
+
+public class NoteUiController {
+
+}

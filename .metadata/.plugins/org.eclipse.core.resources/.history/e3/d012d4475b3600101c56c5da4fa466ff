@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: noteApi
+
+  data:
+    mongodb:
+      uri: mongodb://localhost:3307/dbNote
+
+  cloud:
+    config:
+      enabled: false
+    discovery:
+      enabled: false
+
+server:
+  port: 5002
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health

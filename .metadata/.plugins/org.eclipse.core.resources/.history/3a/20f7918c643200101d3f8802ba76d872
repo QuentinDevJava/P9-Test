@@ -1,0 +1,25 @@
+package com.mediLabo.patientService.dto;
+
+import java.time.LocalDate;
+
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class PatientDto {
+
+	private int id;
+	
+	private String nom;
+
+	private String prenom;
+
+	private LocalDate date;
+
+	private String genre;
+
+	private String adresse;
+
+	private String telephone;
+
+}

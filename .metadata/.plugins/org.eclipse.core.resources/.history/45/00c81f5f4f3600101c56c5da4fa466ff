@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Ajouter une note</title>
+</head>
+<body>
+    <h1>Ajouter une note pour <span th:text="${patientNom}">Patient</span></h1>
+
+    <form th:action="@{'/patients/notes/add/' + ${patientNom}}" method="post">
+        <textarea name="note" rows="4" cols="50" placeholder="Contenu de la note"></textarea><br/>
+        <button type="submit">Enregistrer</button>
+    </form>
+
+    <a href="/patients">← Retour</a>
+</body>
+</html>

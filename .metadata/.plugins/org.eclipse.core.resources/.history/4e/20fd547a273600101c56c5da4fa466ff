@@ -1,0 +1,25 @@
+package com.mediLabo.patientApi.dto;
+
+import com.mediLabo.noteApi.entities.Note;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class NoteDto {
+
+	private int id;
+
+	private String note;
+
+	private int fkPatientId;
+
+	public static NoteDto fromEntity(Note note) {
+		return NoteDto.builder().id(note.getId()).note(note.getNote()).fkPatientId(note.getFkPatientId()).build();
+	}
+}

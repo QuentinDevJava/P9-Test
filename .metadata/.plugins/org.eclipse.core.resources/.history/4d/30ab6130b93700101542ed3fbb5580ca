@@ -1,0 +1,17 @@
+package com.mediLabo.patientApi.dto;
+
+import java.util.List;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class ApiResponseDto {
+
+	private List<NoteDto> noteDtos;
+	private PatientDto patientDto;
+
+}

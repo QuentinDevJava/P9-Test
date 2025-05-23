@@ -1,0 +1,27 @@
+################### DataSource Configuration ##########################
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/patientDB
+    username: root
+    password: root
+
+  ################### Hibernate Configuration ##########################
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    open-in-view: true
+
+  cloud:
+    discovery:
+      enabled: false
+
+server:
+  port: 5000 # Port de patient-api
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health

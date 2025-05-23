@@ -1,0 +1,27 @@
+package com.mediLabo.noteApi.mapper;
+
+import org.springframework.stereotype.Component;
+
+import com.mediLabo.noteApi.dto.NoteDto;
+import com.mediLabo.patientApi.dto.PatientDto;
+import com.mediLabo.patientApi.entities.Patient;
+
+@Component
+public class NoteMapper {
+
+	public PatientDto toDto(Patient patient, NoteDto noteDto) {
+		return PatientDto.builder().id(patient.getId()).nom(patient.getNom()).prenom(patient.getPrenom())
+				.dateAnniversaire(patient.getDateAnniversaire()).genre(patient.getGenre()).adresse(patient.getAdresse())
+				.telephone(patient.getTelephone()).fknoteId(patient.getFknoteId()).note(noteDto.getNote()).build();
+	}
+//	public PatientDto toDto(Patient patient, ApiResponseDto apiResponseDto) {
+//		return PatientDto.builder().id(patient.getId()).nom(patient.getNom()).prenom(patient.getPrenom())
+//				.dateAnniversaire(patient.getDateAnniversaire()).genre(patient.getGenre()).adresse(patient.getAdresse())
+//				.telephone(patient.getTelephone()).note(apiResponseDto.getNoteDto().getNote()).build();
+//	}
+
+	public Patient toEntity(PatientDto dto) {
+		return Patient.builder().nom(dto.getNom()).prenom(dto.getPrenom()).dateAnniversaire(dto.getDateAnniversaire())
+				.genre(dto.getGenre()).adresse(dto.getAdresse()).telephone(dto.getTelephone()).build();
+	}
+}

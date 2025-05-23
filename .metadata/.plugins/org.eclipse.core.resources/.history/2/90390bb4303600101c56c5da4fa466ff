@@ -1,0 +1,11 @@
+package com.mediLabo.patientApi.service;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+
+@FeignClient(url = "http://localhost:5002", value = "noteApi")
+public class ApiClient {
+	@GetMapping("api/notes/{id}")
+	DepartmentDto getDepByCode(@PathVariable("id") int departmentCode);
+}

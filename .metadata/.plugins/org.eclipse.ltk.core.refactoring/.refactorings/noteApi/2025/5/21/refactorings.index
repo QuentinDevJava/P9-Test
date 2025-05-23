@@ -1,0 +1,14 @@
+1747815418469	Rename resource 'application.properties'
+1747816360488	Rename package 'com.mediLabo.patientApi.repository'
+1747820311614	Copy compilation unit
+1747829543908	Rename package 'com.mediLabo.patientApi.mapper'
+1747829593083	Rename local variable 'patient'
+1747829685989	Rename local variable 'bote'
+1747832881139	Delete element
+1747832884161	Delete element
+1747842211118	Rename resource 'application.yml'
+1747842790474	Copy compilation unit
+1747843329819	Delete element
+1747844073814	Delete element
+1747844086007	Delete element
+1747844099617	Rename resource 'application-prod.yml'

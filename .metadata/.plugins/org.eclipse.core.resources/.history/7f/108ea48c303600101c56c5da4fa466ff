@@ -1,0 +1,9 @@
+package com.mediLabo.patientApi.service;
+
+@FeignClient(url = "http://localhost:8080", value = "DEPARTMENT") 
+public class ApiClient {
+	@GetMapping("api/departments/{department-code}") 
+	DepartmentDto getDepByCode(@PathVariable("department-code") 
+	String departmentCode 
+	)
+}

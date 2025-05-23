@@ -1,0 +1,5 @@
+package com.mediLabo.patientService.dto;
+
+public class PatientDto {
+
+}

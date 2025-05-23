@@ -1,0 +1,39 @@
+1747400935378	Rename type 'PatientManagementApplication'
+1747400938678	Rename type 'PatientManagementApplicationTests'
+1747401022024	Rename package 'com.mediLabo.patientManagement'
+1747401070998	Move compilation unit
+1747401084183	Delete element
+1747401091908	Copy package
+1747401097917	Delete element
+1747401118077	Rename package 'com.mediLabo.patientService'
+1747401123362	Move compilation unit
+1747401161610	Move compilation unit
+1747401167944	Delete element
+1747401174326	Delete element
+1747404998486	Copy file
+1747405479608	Delete element
+1747406454586	Rename package 'com.mediLabo.patientService.patient'
+1747407073303	Rename package 'com.mediLabo.patientService'
+1747407122804	Rename package 'com.mediLabo.patientService.dto'
+1747407139815	Rename package 'com.mediLabo.patientService.entities'
+1747407148270	Rename package 'com.mediLabo.patientService.repository'
+1747407170971	Rename package 'com.mediLabo'
+1747408192416	Rename package 'com.mediLabo.patientMs.controller'
+1747408252177	Rename package 'com.mediLabo.patientMs.restController'
+1747410411312	Copy file
+1747410418898	Rename resource 'application.yml'
+1747410828231	Rename package 'com.mediLabo.patientManagement'
+1747410885431	Copy file
+1747413657393	Rename package 'com.mediLabo.patientMs'
+1747415115264	Rename package 'com.mediLabo.patientMs.dto'
+1747415130225	Rename package 'com.mediLab.dto'
+1747415145881	Copy package
+1747415176896	Rename package 'com.mediLabo.patientMs'
+1747415185909	Delete element
+1747415207734	Rename package 'com.mediLabo.patientMs.repository'
+1747415222423	Rename package 'com.mediLabo.patientMs.restControllers'
+1747415230027	Rename package 'com.mediLabo.patientMs.service'
+1747415234444	Delete element
+1747416042253	Rename package 'com.mediLabo.patientMapper'
+1747423329828	Rename field 'date'
+1747423349492	Rename field 'date'

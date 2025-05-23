@@ -1,0 +1,48 @@
+package com.mediLabo.noteApi.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.mediLabo.noteApi.dto.NoteDto;
+import com.mediLabo.noteApi.entities.Note;
+import com.mediLabo.noteApi.repository.NoteRepository;
+
+import lombok.AllArgsConstructor;
+
+@Service
+@AllArgsConstructor
+public class NoteServiceImpl implements NoteService {
+
+	private NoteRepository noteRepository;
+
+	@Override
+	public List<NoteDto> getNotesByNom(String patientNom) {
+		return noteRepository.findAllByFkPatientNom(patientNom).stream().map(this::toDto).toList();
+	}
+
+	@Override
+	public NoteDto createNote(NoteDto noteDto) {
+		Note note = Note.builder().fkPatientNom(noteDto.getFkPatientNom()).note(noteDto.getNote()).build();
+
+		return toDto(noteRepository.save(note));
+	}
+
+	@Override
+	public NoteDto updateNote(String id, NoteDto noteDto) {
+		Note note = noteRepository.findById(id);
+		note.setNote(noteDto.getNote());
+		return toDto(noteRepository.save(note));
+	}
+
+	@Override
+	public NoteDto getNotesById(String id) {
+		Note note = noteRepository.findById(id);
+		return toDto(note);
+	}
+
+	private NoteDto toDto(Note note) {
+		return NoteDto.builder().id(note.getId()).fkPatientNom(note.getFkPatientNom()).note(note.getNote()).build();
+	}
+
+}

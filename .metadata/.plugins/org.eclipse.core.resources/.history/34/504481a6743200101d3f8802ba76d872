@@ -1,0 +1,8 @@
+package com.mediLabo.ui.patient;
+
+import lombok.Data;
+
+@Data
+public class PatientResponse {
+	private EmbeddedPatients _embedded;
+}

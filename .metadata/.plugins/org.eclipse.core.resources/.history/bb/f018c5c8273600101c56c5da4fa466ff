@@ -1,0 +1,9 @@
+package com.mediLabo.patientApi.dto;
+
+@Data 
+@NoArgsConstructor 
+@AllArgsConstructor 
+public class APIResponseDto { 
+private TeacherDto teacherDto; 
+private DepartmentDto departmentDto;
+}

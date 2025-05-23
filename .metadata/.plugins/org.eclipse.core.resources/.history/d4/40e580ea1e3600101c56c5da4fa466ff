@@ -1,0 +1,28 @@
+package com.mediLabo.noteApi;
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.mediLabo.noteApi.entities.Note;
+import com.mediLabo.noteApi.repository.NoteRepository;
+
+@SpringBootApplication
+public class NoteApiApplication implements CommandLineRunner {
+
+	private final NoteRepository noteRepository;
+
+	public NoteApiApplication(NoteRepository noteRepository) {
+		this.noteRepository = noteRepository;
+	}
+
+	public static void main(String[] args) {
+		SpringApplication.run(NoteApiApplication.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		noteRepository.save(new Note(1,"ildnf jdngjd dnfjngf fndnf gros",1));
+	}
+
+}

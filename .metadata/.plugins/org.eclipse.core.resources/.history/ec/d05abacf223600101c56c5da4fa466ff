@@ -1,0 +1,12 @@
+package com.mediLabo.noteApi.service;
+
+import org.springframework.stereotype.Service;
+
+import com.mediLabo.noteApi.dto.NoteDto;
+
+@Service
+public interface NoteService {
+
+	NoteDto getNoteById(int id);
+
+}

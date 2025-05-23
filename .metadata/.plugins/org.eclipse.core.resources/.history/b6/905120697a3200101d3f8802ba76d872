@@ -1,0 +1,52 @@
+package com.mediLabo.restControllers;
+
+import org.springframework.stereotype.Service;
+
+import com.mediLabo.dto.PatientDto;
+import com.mediLabo.entities.Patient;
+import com.mediLabo.mapper.PatientMapper;
+import com.mediLabo.repository.PatientRepository;
+import com.mediLabo.service.PatientService;
+
+import lombok.AllArgsConstructor;
+
+@Service
+@AllArgsConstructor
+public class PatientServiceImpl implements PatientService {
+
+	private final PatientRepository patientRepository;
+	private final PatientMapper mapper;
+
+	@Override
+	public PatientDto getPatientById(int id) {
+		Patient patient = patientRepository.findById(id)
+				.orElseThrow(() -> new RuntimeException("Patient introuvable avec l'id : " + id));
+		return mapper.toDto(patient);
+	}
+
+	@Override
+	public List<PatientDto> getAllPatient() {
+		return patientRepository.findAll().stream().map(mapper::toDto).toList();
+	}
+
+	@Override
+	public PatientDto addPatient(PatientDto patientDto) {
+		Patient saved = patientRepository.save(mapper.toEntity(patientDto));
+		return mapper.toDto(saved);
+	}
+
+	@Override
+	public PatientDto updatePatient(int id, PatientDto patientDto) {
+		Patient existing = patientRepository.findById(id)
+				.orElseThrow(() -> new RuntimeException("Patient introuvable avec l'id : " + id));
+
+		existing.setNom(patientDto.getNom());
+		existing.setPrenom(patientDto.getPrenom());
+		existing.setDate(patientDto.getDate());
+		existing.setGenre(patientDto.getGenre());
+		existing.setAdresse(patientDto.getAdresse());
+		existing.setTelephone(patientDto.getTelephone());
+
+		return mapper.toDto(patientRepository.save(existing));
+	}
+}

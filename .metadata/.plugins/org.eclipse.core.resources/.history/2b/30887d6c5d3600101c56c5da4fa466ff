@@ -1,0 +1,19 @@
+package com.mediLabo.noteApi.repository;
+
+import java.util.List;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
+import org.springframework.stereotype.Repository;
+
+import com.mediLabo.noteApi.entities.Note;
+
+@EnableMongoRepositories(basePackages = "com.mediLabo.noteApi.repository")
+@Repository
+public interface NoteRepository extends MongoRepository<Note, Integer> {
+
+	Note findById(int id);
+
+	List<Note> findAllByFkPatientNom(String Patientnom);
+
+}

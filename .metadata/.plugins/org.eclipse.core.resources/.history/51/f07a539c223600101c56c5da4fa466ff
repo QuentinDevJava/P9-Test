@@ -1,0 +1,9 @@
+package com.mediLabo.noteApi.service;
+
+import com.mediLabo.noteApi.dto.NoteDto;
+@service
+public interface NoteService {
+
+	NoteDto getNoteById(int id);
+
+}

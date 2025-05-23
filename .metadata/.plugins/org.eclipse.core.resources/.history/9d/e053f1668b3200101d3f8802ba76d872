@@ -1,0 +1,19 @@
+package com.mediLabo.patient;
+
+import java.time.LocalDate;
+
+import org.springframework.format.annotation.DateTimeFormat;
+
+import lombok.Data;
+
+@Data
+public class Patient {
+	private int id;
+	private String nom;
+	private String prenom;
+	private LocalDate dateAnniversaire;
+	private String genre;
+	private String adresse;
+	private String telephone;
+
+}

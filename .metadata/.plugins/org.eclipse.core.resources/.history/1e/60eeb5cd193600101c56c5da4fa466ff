@@ -1,0 +1,8 @@
+package com.mediLabo.patientApi;
+
+public class Snippet {
+	public static void main(String[] args) {
+		com.mediLabo.gatewayApi
+	}
+}
+

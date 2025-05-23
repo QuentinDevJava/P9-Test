@@ -1,0 +1,16 @@
+package com.mediLabo.noteApi.mapper;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class NoteMapper {
+
+//	public NoteDto toDto(Note note) {
+//		return NoteDto.builder().id(note.getId()).fkPatientNom(note.getFkPatientNom()).note(note.getNote()).build();
+//	}
+
+//	public Note toEntity(NoteDto noteDto) {
+//		return Note.builder().id(noteDto.getId()).fkPatientNom(noteDto.getFkPatientNom()).note(noteDto.getNote())
+//				.build();
+//	}
+}

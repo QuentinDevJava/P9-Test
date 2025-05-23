@@ -1,0 +1,5 @@
+package com.mediLabo.patientApi.service;
+
+public class ApiClient {
+
+}

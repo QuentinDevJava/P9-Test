@@ -1,0 +1,5 @@
+package com.mediLabo.patientMs.service;
+
+public interface PatientService {
+
+}

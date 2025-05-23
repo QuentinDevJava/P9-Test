@@ -1,0 +1,17 @@
+package com.mediLabo.noteApi.dto;
+
+import java.time.LocalDate;
+
+import com.mediLabo.noteApi.service.PatientDto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class NoteDto {
+}

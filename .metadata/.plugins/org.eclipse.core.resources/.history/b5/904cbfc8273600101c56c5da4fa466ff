@@ -1,0 +1,5 @@
+package com.mediLabo.patientApi.dto;
+
+public class ApiResponseDto {
+
+}

@@ -1,0 +1,79 @@
+package com.mediLabo.ui.controller;
+
+import java.time.LocalDate;
+import java.util.Arrays;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.client.RestTemplate;
+
+import com.mediLabo.ui.patient.Patient;
+
+@Controller
+public class PatientController {
+
+	private final RestTemplate restTemplate = new RestTemplate();
+
+	@Value("${patient.api.url}")
+	private String apiUrl;
+
+	@GetMapping("/patients")
+	public String listPatients(Model model) {
+		Patient[] patients = restTemplate.getForObject(apiUrl, Patient[].class);
+		model.addAttribute("patients", Arrays.asList(patients));
+		return "patients";
+	}
+
+	@GetMapping("/patients/{id}")
+	public String viewPatient(@PathVariable int id, Model model) {
+		Patient patient = restTemplate.getForObject(apiUrl + "/" + id, Patient.class);
+		model.addAttribute("patient", patient);
+		return "patient-detail";
+	}
+
+	@GetMapping("/patients/add")
+	public String showAddPatientForm(Model model) {
+		model.addAttribute("patient", new Patient());
+		return "patient-add";
+	}
+
+	@PostMapping("/patients/add")
+	public String addPatient(@ModelAttribute Patient patient) {
+		restTemplate.postForObject(apiUrl, patient, Patient.class);
+		return "redirect:/patients";
+	}
+
+	// TODO probleme format date
+	@GetMapping("/patients/update/{id}")
+	public String showUpdateForm(@PathVariable int id, Model model) {
+		Patient patient = restTemplate.getForObject(apiUrl + "/" + id, Patient.class);
+		model.addAttribute("localDate", patient.getDateAnniversaire());
+		model.addAttribute("patient", patient);
+		return "patient-update";
+	}
+
+	// TODO probleme format date
+	@PostMapping("/patients/update/{id}")
+	public String updatePatient(@PathVariable int id, @ModelAttribute Patient patient,
+			@ModelAttribute LocalDate localDate) {
+		System.out.println(">> DATE envoyée : " + patient.getDateAnniversaire());
+		System.out.println(">> LocalDATE envoyée : " + localDate);
+		patient.setDateAnniversaire(localDate);
+		restTemplate.put(apiUrl + "/" + id, patient);
+		return "redirect:/patients";
+	}
+
+	@GetMapping("/notes/{patientNom}")
+	public String getPatientNotes(@PathVariable String patientNom, Model model) {
+		// Appel du microservice notes
+		NoteDto noteDto = restTemplate.getForObject(noteApiUrl + patientNom, NoteDto.class);
+		model.addAttribute("patientNom", noteDto.getFkPatientNom());
+		model.addAttribute("notes", noteDto.getNotes());
+		return "notes-patient"; // nom du fichier Thymeleaf
+	}
+}

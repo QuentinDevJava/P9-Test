@@ -1,0 +1,57 @@
+package com.mediLabo.ui.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.client.RestTemplate;
+
+import com.mediLabo.ui.patient.Note;
+
+@Controller
+@RequestMapping("/patients/notes")
+public class NoteUiController {
+
+	private final RestTemplate restTemplate = new RestTemplate();
+
+	@Value("${note.api.url}") // Ex: http://localhost:8082/api/notes
+	private String noteApiUrl;
+
+	// ➕ Formulaire d'ajout
+	@GetMapping("/add/{patientNom}")
+	public String showAddNoteForm(@PathVariable String patientNom, Model model) {
+		model.addAttribute("patientNom", patientNom);
+		return "add-note";
+	}
+
+	// ✅ Soumission d'une nouvelle note
+	@PostMapping("/add/{patientNom}")
+	public String submitAddNote(@PathVariable String patientNom, @RequestParam("note") String noteText) {
+		Note newNote = new Note();
+		newNote.setFkPatientNom(patientNom);
+		newNote.setNote(noteText);
+
+		restTemplate.postForObject(noteApiUrl, newNote, Note.class);
+		return "redirect:/patients";
+	}
+
+	// 📝 Formulaire de modification
+	@GetMapping("/edit/{noteId}")
+	public String showEditNoteForm(@PathVariable int noteId, Model model) {
+		Note note = restTemplate.getForObject(noteApiUrl + "/" + noteId, Note.class);
+		model.addAttribute("note", note);
+		return "edit-note";
+	}
+
+	// ✅ Soumission de modification
+	@PostMapping("/edit/{noteId}")
+	public String submitEditNote(@PathVariable int noteId, @RequestParam("note") String updatedText) {
+		Note updatedNote = restTemplate.getForObject(noteApiUrl + "/" + noteId, Note.class);
+		updatedNote.setNote(updatedText);
+
+		restTemplate.put(noteApiUrl + "/" + noteId, updatedNote);
+		return "redirect:/patients";
+	}
+}

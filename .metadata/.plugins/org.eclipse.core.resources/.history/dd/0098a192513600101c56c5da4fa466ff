@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Modifier une note</title>
+</head>
+<body>
+    <h1>Modifier la note</h1>
+
+    <form th:action="@{'/patients/notes/edit/' + ${note.id}}" method="post">
+        <textarea name="note" rows="4" cols="50" th:text="${note.note}"></textarea><br/>
+        <button type="submit">Mettre à jour</button>
+    </form>
+
+    <a href="/patients">← Retour</a>
+</body>
+</html>

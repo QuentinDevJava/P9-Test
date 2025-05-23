@@ -1,0 +1,38 @@
+package com.mediLabo.dto;
+
+import java.time.LocalDate;
+
+import com.mediLabo.entities.Patient;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class PatientDto {
+
+	private int id;
+
+	private String nom;
+
+	private String prenom;
+
+	private LocalDate dateAnniversaire;
+
+	private String genre;
+
+	private String adresse;
+
+	private String telephone;
+
+	public static PatientDto fromEntity(Patient patient) {
+		return PatientDto.builder().id(patient.getId()).nom(patient.getNom()).prenom(patient.getPrenom())
+				.date(patient.getDate()).genre(patient.getGenre()).adresse(patient.getAdresse())
+				.telephone(patient.getTelephone()).build();
+	}
+
+}

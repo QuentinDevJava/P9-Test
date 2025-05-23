@@ -1,0 +1,15 @@
+1747814674124	Rename package 'com.mediLabo'
+1747814758213	Rename package 'com.mediLabo.patient_ui'
+1747831418861	Delete element
+1747831420885	Delete element
+1747834790063	Copy file
+1747834968831	Rename field 'apiUrl'
+1747836208233	Rename resource 'patient-note.html'
+1747837489444	Rename resource 'add-note'
+1747837528920	Copy file
+1747844476776	Rename package 'com.mediLabo.ui.patient'
+1747844530577	Rename type 'Note'
+1747844539683	Rename type 'Patient'
+1747993095306	Rename type 'PatientController'
+1747999580808	Rename local variable 'note'
+1747999598328	Rename local variable 'updatedNote'

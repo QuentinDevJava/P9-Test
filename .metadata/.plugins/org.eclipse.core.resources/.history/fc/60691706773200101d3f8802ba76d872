@@ -1,0 +1,47 @@
+package com.mediLabo.controller;
+
+import java.util.Arrays;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.client.RestTemplate;
+
+import com.mediLabo.patient.Patient;
+
+@Controller
+public class PatientController {
+
+	private final RestTemplate restTemplate = new RestTemplate();
+
+	@Value("${patient.api.url}")
+	private String apiUrl;
+
+	@GetMapping("/patients")
+	public String listPatients(Model model) {
+		Patient[] patients = restTemplate.getForObject(apiUrl, Patient[].class);
+		model.addAttribute("patients", Arrays.asList(patients));
+		return "patients";
+	}
+
+	@GetMapping("/patients/{id}")
+	public String viewPatient(@PathVariable int id, Model model) {
+		Patient patient = restTemplate.getForObject(apiUrl + "/" + id, Patient.class);
+		model.addAttribute("patient", patient);
+		return "patient-detail";
+	}
+
+	@GetMapping("/patients/{id}")
+	public String updatePatient(@PathVariable int id, Model model) {
+		Patient patient = restTemplate.getForObject(apiUrl + "/" + id, Patient.class);
+		model.addAttribute("patient", patient);
+		return "patient-detail";
+	}
+
+	@GetMapping("/patients/add")
+	public String addPatient() {
+		return "patient-add";
+	}
+}

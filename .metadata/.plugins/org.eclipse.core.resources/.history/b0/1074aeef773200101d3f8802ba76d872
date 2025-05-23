@@ -1,0 +1,13 @@
+package com.mediLabo.patientMs.service;
+
+import java.util.List;
+
+import com.mediLabo.patientMs.dto.PatientDto;
+
+public interface PatientService {
+
+	PatientDto getPatientById(int id);
+
+	List<PatientDto> getAllPatient();
+
+}

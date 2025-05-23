@@ -1,0 +1,21 @@
+package com.mediLabo.noteApi;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.mediLabo.noteApi.repository.NoteRepository;
+
+@SpringBootApplication
+public class NoteApiApplication {
+
+	private final NoteRepository noteRepository;
+
+	public NoteApiApplication(NoteRepository noteRepository) {
+		this.noteRepository = noteRepository;
+	}
+
+	public static void main(String[] args) {
+		SpringApplication.run(NoteApiApplication.class, args);
+	}
+
+}

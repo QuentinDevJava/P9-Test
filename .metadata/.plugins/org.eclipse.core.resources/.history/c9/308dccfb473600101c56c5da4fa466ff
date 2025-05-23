@@ -1,0 +1,16 @@
+package com.mediLabo.ui.patient;
+
+import java.time.LocalDate;
+import java.util.List;
+
+import lombok.Data;
+
+@Data
+public class Note {
+	private int id;
+
+	private String fkPatientNom;
+
+	private String note;
+
+}

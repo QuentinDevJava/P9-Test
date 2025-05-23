@@ -1,0 +1,29 @@
+package com.mediLabo.noteApi.restController;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.mediLabo.noteApi.service.NoteService;
+import com.mediLabo.patientApi.dto.PatientDto;
+import com.mediLabo.patientApi.service.PatientService;
+
+import lombok.AllArgsConstructor;
+
+@RestController
+@RequestMapping("/api/notes")
+@AllArgsConstructor
+public class NoteController {
+	private NoteService noteService;
+	
+	@GetMapping("{id}")
+	public ResponseEntity<NoteDto> getPatientById(@PathVariable int id) {
+
+		return new ResponseEntity<>(patientService.getPatientById(id), HttpStatus.OK);
+
+	}
+
+}

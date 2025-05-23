@@ -1,0 +1,15 @@
+server:
+  port: 5005  # Port du gateway
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: patientApi
+          uri: http://localhost:5000    # Port de patient-api
+          predicates:
+            - Path=/api/patients/** 
+        - id: patient-api
+          uri: http://localhost:5000    # Port de patient-api
+          predicates:
+            - Path=/api/patients/** 

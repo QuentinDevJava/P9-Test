@@ -1,0 +1,5 @@
+package com.mediLabo.noteApi.service;
+
+public interface NoteService {
+
+}

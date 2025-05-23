@@ -1,0 +1,41 @@
+package com.mediLabo.noteApi.entities;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@Entity
+@Table(name = "note")
+public class Note {
+
+	public Note(String note, String fkPatientNom) {
+		super();
+		this.note = note;
+		this.fkPatientNom = fkPatientNom;
+	}
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id")
+	private int id;
+
+	@Column(name = "fkPatientNom")
+	private String fkPatientNom;
+
+	@Column(name = "note")
+	private String note;
+
+	@Column(name = "note")
+	private List<String> notes;
+}

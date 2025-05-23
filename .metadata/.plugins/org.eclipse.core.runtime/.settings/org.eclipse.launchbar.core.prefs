@@ -1,0 +1,16 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:patientManagement - PatientManagementApplication,org.eclipse.launchbar.core.descriptorType.default\:clean install gateway,org.eclipse.launchbar.core.descriptorType.default\:clean install patient-api,org.eclipse.launchbar.core.descriptorType.default\:clean install ui,org.eclipse.launchbar.core.descriptorType.default\:clean install noteApi,org.eclipse.launchbar.core.descriptorType.default\:devtools-client[noteApi],org.eclipse.launchbar.core.descriptorType.default\:Run-all,org.eclipse.launchbar.core.descriptorType.default\:gateway-service - GatewayServiceApplication,org.eclipse.launchbar.core.descriptorType.default\:ui - PatientUiApplication,org.eclipse.launchbar.core.descriptorType.default\:patient-service - PatientApiApplication,org.eclipse.launchbar.core.descriptorType.default\:noteApi - NoteApiApplication,org.eclipse.launchbar.core.descriptorType.default\:gatewayApi - GatewayApiApplication
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:Run-all-medilab/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:clean\ install\ gateway/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:clean\ install\ gateway/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:gateway-service\ -\ GatewayServiceApplication/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:gateway-service\ -\ GatewayServiceApplication/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:noteApi\ -\ NoteApiApplication/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:patient-service\ -\ PatientApiApplication/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:patient-service\ -\ PatientServiceApplication/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:patientManagement\ -\ PatientManagementApplication/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:patientManagement\ -\ PatientManagementApplication/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:ui\ -\ PatientUiApplication/activeLaunchMode=debug

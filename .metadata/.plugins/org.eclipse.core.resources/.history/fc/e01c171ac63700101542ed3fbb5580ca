@@ -1,0 +1,62 @@
+package com.mediLabo.patientApi.restControllers;
+
+import java.util.List;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.mediLabo.patientApi.dto.PatientDto;
+import com.mediLabo.patientApi.service.PatientService;
+
+import lombok.AllArgsConstructor;
+
+@RestController
+@RequestMapping("/api/patients")
+@AllArgsConstructor
+public class PatientController {
+
+	private PatientService patientService;
+
+	@GetMapping("{id}")
+	public ResponseEntity<PatientDto> getPatientById(@PathVariable int id) {
+		return new ResponseEntity<>(patientService.getPatientById(id), HttpStatus.OK);
+
+	}
+
+	@GetMapping("/name/{name}")
+	public ResponseEntity<PatientDto> getPatientByName(@PathVariable String name) {
+		return new ResponseEntity<>(patientService.getPatientByName(name), HttpStatus.OK);
+
+	}
+
+	@GetMapping
+	public ResponseEntity<List<PatientDto>> getAllPatients() {
+		return new ResponseEntity<>(patientService.getAllPatient(), HttpStatus.OK);
+	}
+
+	@PostMapping
+	public ResponseEntity<PatientDto> addPatient(@RequestBody PatientDto patientDto) {
+		PatientDto savedPatient = patientService.addPatient(patientDto);
+		return new ResponseEntity<>(savedPatient, HttpStatus.CREATED);
+	}
+
+	@PutMapping("/{id}")
+	public ResponseEntity<PatientDto> updatePatient(@PathVariable int id, @RequestBody PatientDto patientDto) {
+		PatientDto updatedPatient = patientService.updatePatient(id, patientDto);
+		return new ResponseEntity<>(updatedPatient, HttpStatus.OK);
+	}
+
+//	@DeleteMapping("/{id}")
+//	public ResponseEntity<Void> deletePatient(@PathVariable int id) {
+//		patientService.deletePatient(id);
+//		return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+//	}
+
+}

@@ -1,0 +1,5 @@
+package com.mediLabo.patientMs.restController;
+
+public class PatientController {
+
+}

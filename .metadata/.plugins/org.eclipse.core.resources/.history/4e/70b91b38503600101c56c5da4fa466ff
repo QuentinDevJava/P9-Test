@@ -1,0 +1,10 @@
+package com.mediLabo.noteApi.service;
+
+import java.util.List;
+
+import com.mediLabo.noteApi.dto.NoteDto;
+
+public interface NoteService {
+
+	List<NoteDto> getNotesByNom(String nom);
+}

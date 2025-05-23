@@ -1,0 +1,15 @@
+package com.mediLabo.noteApi.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.rest.webmvc.RepositoryRestController;
+
+import com.mediLabo.noteApi.entities.Note;
+
+@RepositoryRestController
+public interface NoteRepository extends JpaRepository<Note, Integer> {
+
+	Note findById(int id);
+
+	Note findByFkPatientId(int patientId);
+
+}

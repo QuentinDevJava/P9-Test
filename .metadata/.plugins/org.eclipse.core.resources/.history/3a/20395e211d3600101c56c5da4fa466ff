@@ -1,0 +1,22 @@
+package com.mediLabo.noteApi.entities;
+
+import java.time.LocalDate;
+
+import com.mediLabo.patientApi.entities.Patient;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@Entity
+@Table(name = "note")
+public class Note {
+
+}
