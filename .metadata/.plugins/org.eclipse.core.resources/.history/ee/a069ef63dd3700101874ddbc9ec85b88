@@ -1,0 +1,9 @@
+spring.application.name=eurekaServer
+
+server.port=8761 
+# evite que eureka s'ajoute elle meme (cree bug erreur)
+eureka.client.register-with-eureka=false 
+# autorise ou non de recuperer les information sur les registres enregistrés
+eureka.client.fetch-registry=false 
+# activer config server
+spring.cloud.config.enabled=false

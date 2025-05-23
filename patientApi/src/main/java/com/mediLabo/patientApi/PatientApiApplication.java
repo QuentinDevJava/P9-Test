@@ -27,7 +27,7 @@ public class PatientApiApplication implements CommandLineRunner {
 		SpringApplication.run(PatientApiApplication.class, args);
 	}
 
-	@Profile("local")
+	@Profile("Local")
 	@Override
 	public void run(String... args) throws Exception {
 

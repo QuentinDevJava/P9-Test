@@ -1,0 +1,429 @@
+2025-05-23T21:17:25.576+02:00  INFO 12348 --- [eurekaServer] [restartedMain] c.m.e.EurekaServerApplication            : Starting EurekaServerApplication using Java 22.0.1 with PID 12348 (C:\Users\martel\Desktop\1-dev java\P9-Entrainement\eurekaServer\target\classes started by martel in C:\Users\martel\Desktop\1-dev java\P9-Entrainement\eurekaServer)
+2025-05-23T21:17:25.579+02:00  INFO 12348 --- [eurekaServer] [restartedMain] c.m.e.EurekaServerApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-05-23T21:17:25.642+02:00  INFO 12348 --- [eurekaServer] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-23T21:17:25.644+02:00  INFO 12348 --- [eurekaServer] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-23T21:17:27.022+02:00  INFO 12348 --- [eurekaServer] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8f78fac4-482a-3816-81cc-3120a6b70c6f
+2025-05-23T21:17:27.732+02:00  INFO 12348 --- [eurekaServer] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8761 (http)
+2025-05-23T21:17:27.760+02:00  INFO 12348 --- [eurekaServer] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-23T21:17:27.761+02:00  INFO 12348 --- [eurekaServer] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-23T21:17:27.868+02:00  INFO 12348 --- [eurekaServer] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-23T21:17:27.868+02:00  INFO 12348 --- [eurekaServer] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2223 ms
+2025-05-23T21:17:29.812+02:00  INFO 12348 --- [eurekaServer] [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2025-05-23T21:17:29.815+02:00  INFO 12348 --- [eurekaServer] [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2025-05-23T21:17:30.084+02:00  INFO 12348 --- [eurekaServer] [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2025-05-23T21:17:30.084+02:00  INFO 12348 --- [eurekaServer] [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2025-05-23T21:17:30.364+02:00  INFO 12348 --- [eurekaServer] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-23T21:17:31.531+02:00  WARN 12348 --- [eurekaServer] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-05-23T21:17:31.628+02:00  WARN 12348 --- [eurekaServer] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-23T21:17:31.654+02:00  INFO 12348 --- [eurekaServer] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-05-23T21:17:31.678+02:00  INFO 12348 --- [eurekaServer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-05-23T21:17:31.678+02:00  INFO 12348 --- [eurekaServer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2025-05-23T21:17:31.681+02:00  INFO 12348 --- [eurekaServer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1748027851680 with initial instances count: 0
+2025-05-23T21:17:31.736+02:00  INFO 12348 --- [eurekaServer] [restartedMain] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2025-05-23T21:17:31.739+02:00  INFO 12348 --- [eurekaServer] [restartedMain] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+2025-05-23T21:17:31.883+02:00  INFO 12348 --- [eurekaServer] [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2025-05-23T21:17:31.883+02:00  INFO 12348 --- [eurekaServer] [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2025-05-23T21:17:31.883+02:00  INFO 12348 --- [eurekaServer] [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2025-05-23T21:17:31.883+02:00  INFO 12348 --- [eurekaServer] [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2025-05-23T21:17:31.929+02:00  INFO 12348 --- [eurekaServer] [restartedMain] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+2025-05-23T21:17:31.944+02:00  INFO 12348 --- [eurekaServer] [restartedMain] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2025-05-23T21:17:31.944+02:00  INFO 12348 --- [eurekaServer] [restartedMain] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2025-05-23T21:17:31.960+02:00  INFO 12348 --- [eurekaServer] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-05-23T21:17:32.043+02:00  INFO 12348 --- [eurekaServer] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EUREKASERVER with eureka with status UP
+2025-05-23T21:17:32.067+02:00  INFO 12348 --- [eurekaServer] [Thread-13] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2025-05-23T21:17:32.068+02:00  INFO 12348 --- [eurekaServer] [Thread-13] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2025-05-23T21:17:32.068+02:00  INFO 12348 --- [eurekaServer] [Thread-13] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2025-05-23T21:17:32.068+02:00  INFO 12348 --- [eurekaServer] [Thread-13] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2025-05-23T21:17:32.068+02:00  INFO 12348 --- [eurekaServer] [Thread-13] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2025-05-23T21:17:32.071+02:00  INFO 12348 --- [eurekaServer] [Thread-13] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2025-05-23T21:17:32.080+02:00  INFO 12348 --- [eurekaServer] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8761 (http) with context path '/'
+2025-05-23T21:17:32.081+02:00  INFO 12348 --- [eurekaServer] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+2025-05-23T21:17:32.101+02:00  INFO 12348 --- [eurekaServer] [restartedMain] c.m.e.EurekaServerApplication            : Started EurekaServerApplication in 7.09 seconds (process running for 8.057)
+2025-05-23T21:17:32.744+02:00  INFO 12348 --- [eurekaServer] [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-23T21:17:32.744+02:00  INFO 12348 --- [eurekaServer] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-23T21:17:32.747+02:00  INFO 12348 --- [eurekaServer] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-05-23T21:17:33.903+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 with status UP (replication=false)
+2025-05-23T21:17:34.533+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 with status UP (replication=true)
+2025-05-23T21:17:37.811+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status UP (replication=false)
+2025-05-23T21:17:38.318+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status UP (replication=true)
+2025-05-23T21:18:01.812+02:00  WARN 12348 --- [eurekaServer] [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: GATEWAYAPI - PC-Quentin-Martel.mshome.net:gatewayApi:5005
+2025-05-23T21:18:01.813+02:00  WARN 12348 --- [eurekaServer] [http-nio-8761-exec-6] c.n.eureka.resources.InstanceResource    : Not Found (Renew): GATEWAYAPI - PC-Quentin-Martel.mshome.net:gatewayApi:5005
+2025-05-23T21:18:01.865+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAYAPI/PC-Quentin-Martel.mshome.net:gatewayApi:5005 with status UP (replication=false)
+2025-05-23T21:18:01.871+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAYAPI/PC-Quentin-Martel.mshome.net:gatewayApi:5005 with status UP (replication=false)
+2025-05-23T21:18:02.384+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAYAPI/PC-Quentin-Martel.mshome.net:gatewayApi:5005 with status UP (replication=true)
+2025-05-23T21:18:32.070+02:00  INFO 12348 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-23T21:19:32.072+02:00  INFO 12348 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-23T21:20:32.082+02:00  INFO 12348 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2025-05-23T21:21:32.092+02:00  INFO 12348 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-23T21:21:40.414+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status DOWN (replication=false)
+2025-05-23T21:21:40.929+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status DOWN (replication=true)
+2025-05-23T21:21:43.489+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 (replication=false)
+2025-05-23T21:21:44.005+02:00  WARN 12348 --- [eurekaServer] [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000
+2025-05-23T21:21:44.005+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-7] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): PATIENTAPI - PC-Quentin-Martel.mshome.net:patientApi:5000
+2025-05-23T21:21:44.007+02:00  WARN 12348 --- [eurekaServer] [TaskBatchingWorker-target_localhost-4] c.n.eureka.cluster.ReplicationTask       : The replication of task PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000:Cancel@localhost failed with response code 404
+2025-05-23T21:21:44.007+02:00  WARN 12348 --- [eurekaServer] [TaskBatchingWorker-target_localhost-4] c.netflix.eureka.cluster.PeerEurekaNode  : PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000:Cancel@localhost: missing entry.
+2025-05-23T21:21:57.574+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status UP (replication=false)
+2025-05-23T21:21:58.078+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status UP (replication=true)
+2025-05-23T21:22:19.849+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status DOWN (replication=false)
+2025-05-23T21:22:20.357+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status DOWN (replication=true)
+2025-05-23T21:22:22.907+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 (replication=false)
+2025-05-23T21:22:23.422+02:00  WARN 12348 --- [eurekaServer] [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000
+2025-05-23T21:22:23.422+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-8] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): PATIENTAPI - PC-Quentin-Martel.mshome.net:patientApi:5000
+2025-05-23T21:22:23.424+02:00  WARN 12348 --- [eurekaServer] [TaskBatchingWorker-target_localhost-18] c.n.eureka.cluster.ReplicationTask       : The replication of task PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000:Cancel@localhost failed with response code 404
+2025-05-23T21:22:23.424+02:00  WARN 12348 --- [eurekaServer] [TaskBatchingWorker-target_localhost-18] c.netflix.eureka.cluster.PeerEurekaNode  : PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000:Cancel@localhost: missing entry.
+2025-05-23T21:22:23.926+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status UP (replication=false)
+2025-05-23T21:22:24.429+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status UP (replication=true)
+2025-05-23T21:22:32.092+02:00  INFO 12348 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-23T21:23:32.092+02:00  INFO 12348 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-23T21:24:11.512+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status DOWN (replication=false)
+2025-05-23T21:24:12.025+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status DOWN (replication=true)
+2025-05-23T21:24:14.549+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 (replication=false)
+2025-05-23T21:24:15.057+02:00  WARN 12348 --- [eurekaServer] [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000
+2025-05-23T21:24:15.058+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-9] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): PATIENTAPI - PC-Quentin-Martel.mshome.net:patientApi:5000
+2025-05-23T21:24:15.059+02:00  WARN 12348 --- [eurekaServer] [TaskBatchingWorker-target_localhost-0] c.n.eureka.cluster.ReplicationTask       : The replication of task PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000:Cancel@localhost failed with response code 404
+2025-05-23T21:24:15.059+02:00  WARN 12348 --- [eurekaServer] [TaskBatchingWorker-target_localhost-0] c.netflix.eureka.cluster.PeerEurekaNode  : PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000:Cancel@localhost: missing entry.
+2025-05-23T21:24:15.707+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status UP (replication=false)
+2025-05-23T21:24:16.216+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status UP (replication=true)
+2025-05-23T21:24:32.104+02:00  INFO 12348 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2025-05-23T21:25:32.117+02:00  INFO 12348 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 12ms
+2025-05-23T21:26:32.124+02:00  INFO 12348 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-23T21:27:32.134+02:00  INFO 12348 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-23T21:28:20.200+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAYAPI/PC-Quentin-Martel.mshome.net:gatewayApi:5005 with status DOWN (replication=false)
+2025-05-23T21:28:20.704+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAYAPI/PC-Quentin-Martel.mshome.net:gatewayApi:5005 with status DOWN (replication=true)
+2025-05-23T21:28:23.237+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance GATEWAYAPI/PC-Quentin-Martel.mshome.net:gatewayApi:5005 (replication=false)
+2025-05-23T21:28:23.752+02:00  WARN 12348 --- [eurekaServer] [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: GATEWAYAPI/PC-Quentin-Martel.mshome.net:gatewayApi:5005
+2025-05-23T21:28:23.753+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-9] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): GATEWAYAPI - PC-Quentin-Martel.mshome.net:gatewayApi:5005
+2025-05-23T21:28:23.754+02:00  WARN 12348 --- [eurekaServer] [TaskBatchingWorker-target_localhost-14] c.n.eureka.cluster.ReplicationTask       : The replication of task GATEWAYAPI/PC-Quentin-Martel.mshome.net:gatewayApi:5005:Cancel@localhost failed with response code 404
+2025-05-23T21:28:23.754+02:00  WARN 12348 --- [eurekaServer] [TaskBatchingWorker-target_localhost-14] c.netflix.eureka.cluster.PeerEurekaNode  : GATEWAYAPI/PC-Quentin-Martel.mshome.net:gatewayApi:5005:Cancel@localhost: missing entry.
+2025-05-23T21:28:23.896+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAYAPI/PC-Quentin-Martel.mshome.net:gatewayApi:5005 with status UP (replication=false)
+2025-05-23T21:28:24.401+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAYAPI/PC-Quentin-Martel.mshome.net:gatewayApi:5005 with status UP (replication=true)
+2025-05-23T21:28:25.643+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 with status DOWN (replication=false)
+2025-05-23T21:28:26.147+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 with status DOWN (replication=true)
+2025-05-23T21:28:28.694+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 (replication=false)
+2025-05-23T21:28:29.199+02:00  WARN 12348 --- [eurekaServer] [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002
+2025-05-23T21:28:29.199+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-5] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): NOTEAPI - PC-Quentin-Martel.mshome.net:noteApi:5002
+2025-05-23T21:28:29.201+02:00  WARN 12348 --- [eurekaServer] [TaskBatchingWorker-target_localhost-8] c.n.eureka.cluster.ReplicationTask       : The replication of task NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002:Cancel@localhost failed with response code 404
+2025-05-23T21:28:29.201+02:00  WARN 12348 --- [eurekaServer] [TaskBatchingWorker-target_localhost-8] c.netflix.eureka.cluster.PeerEurekaNode  : NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002:Cancel@localhost: missing entry.
+2025-05-23T21:28:29.410+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 with status UP (replication=false)
+2025-05-23T21:28:29.919+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 with status UP (replication=true)
+2025-05-23T21:28:32.148+02:00  INFO 12348 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 14ms
+2025-05-23T21:28:40.945+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status DOWN (replication=false)
+2025-05-23T21:28:41.450+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status DOWN (replication=true)
+2025-05-23T21:28:42.289+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 with status DOWN (replication=false)
+2025-05-23T21:28:42.293+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 (replication=false)
+2025-05-23T21:28:42.792+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 with status DOWN (replication=true)
+2025-05-23T21:28:42.793+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 (replication=true)
+2025-05-23T21:28:43.538+02:00  INFO 12348 --- [eurekaServer] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAYAPI/PC-Quentin-Martel.mshome.net:gatewayApi:5005 with status DOWN (replication=false)
+2025-05-23T21:28:43.748+02:00  INFO 12348 --- [eurekaServer] [RMI TCP Connection(17)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-05-23T21:28:43.749+02:00  INFO 12348 --- [eurekaServer] [RMI TCP Connection(17)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application EUREKASERVER with eureka with status DOWN
+2025-05-23T21:28:43.751+02:00  INFO 12348 --- [eurekaServer] [RMI TCP Connection(17)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-23T21:28:43.761+02:00  INFO 12348 --- [eurekaServer] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-23T21:28:43.764+02:00  INFO 12348 --- [eurekaServer] [RMI TCP Connection(17)-127.0.0.1] o.s.c.n.e.server.EurekaServerBootstrap   : Shutting down Eureka Server..
+2025-05-23T21:28:43.764+02:00  INFO 12348 --- [eurekaServer] [RMI TCP Connection(17)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2025-05-23T21:28:43.767+02:00  INFO 12348 --- [eurekaServer] [RMI TCP Connection(17)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2025-05-23T21:28:43.767+02:00  INFO 12348 --- [eurekaServer] [RMI TCP Connection(17)-127.0.0.1] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka Service is now shutdown...
+2025-05-23T21:28:43.768+02:00  INFO 12348 --- [eurekaServer] [RMI TCP Connection(17)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2025-05-23T21:28:43.768+02:00  INFO 12348 --- [eurekaServer] [RMI TCP Connection(17)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2025-05-23T21:28:43.765+02:00 ERROR 12348 --- [eurekaServer] [Eureka-Jersey3Client-Conn-Cleaner2] c.n.d.s.t.j.EurekaJersey3ClientImpl      : Cannot clean connections
+
+java.lang.IllegalStateException: Client instance has been closed.
+	at org.glassfish.jersey.internal.guava.Preconditions.checkState(Preconditions.java:169) ~[jersey-common-3.1.10.jar:na]
+	at org.glassfish.jersey.client.JerseyClient.checkNotClosed(JerseyClient.java:248) ~[jersey-client-3.1.10.jar:na]
+	at org.glassfish.jersey.client.JerseyClient.getConfiguration(JerseyClient.java:363) ~[jersey-client-3.1.10.jar:na]
+	at org.glassfish.jersey.client.JerseyClient.getConfiguration(JerseyClient.java:54) ~[jersey-client-3.1.10.jar:na]
+	at com.netflix.discovery.shared.transport.jersey3.EurekaJersey3ClientImpl$ConnectionCleanerTask.run(EurekaJersey3ClientImpl.java:338) ~[eureka-client-jersey3-2.0.4.jar:2.0.4]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2025-05-23T21:28:43.774+02:00  INFO 12348 --- [eurekaServer] [RMI TCP Connection(17)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-05-23T21:28:43.774+02:00  INFO 12348 --- [eurekaServer] [RMI TCP Connection(17)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-05-23T21:29:31.677+02:00  INFO 14812 --- [eurekaServer] [main] c.m.e.EurekaServerApplicationTests       : Starting EurekaServerApplicationTests using Java 22.0.1 with PID 14812 (started by martel in C:\Users\martel\Desktop\1-dev java\P9-Entrainement\eurekaServer)
+2025-05-23T21:29:31.680+02:00  INFO 14812 --- [eurekaServer] [main] c.m.e.EurekaServerApplicationTests       : No active profile set, falling back to 1 default profile: "default"
+2025-05-23T21:29:33.400+02:00  INFO 14812 --- [eurekaServer] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fa45f8d2-4a6b-3f50-9c21-05d889cf0ddf
+2025-05-23T21:29:34.163+02:00  INFO 14812 --- [eurekaServer] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-23T21:29:35.461+02:00  WARN 14812 --- [eurekaServer] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-23T21:29:35.744+02:00  INFO 14812 --- [eurekaServer] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-05-23T21:29:35.765+02:00  INFO 14812 --- [eurekaServer] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-05-23T21:29:35.767+02:00  INFO 14812 --- [eurekaServer] [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2025-05-23T21:29:35.769+02:00  INFO 14812 --- [eurekaServer] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1748028575768 with initial instances count: 0
+2025-05-23T21:29:35.835+02:00  INFO 14812 --- [eurekaServer] [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2025-05-23T21:29:35.838+02:00  INFO 14812 --- [eurekaServer] [main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+2025-05-23T21:29:36.053+02:00  INFO 14812 --- [eurekaServer] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2025-05-23T21:29:36.054+02:00  INFO 14812 --- [eurekaServer] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2025-05-23T21:29:36.054+02:00  INFO 14812 --- [eurekaServer] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2025-05-23T21:29:36.055+02:00  INFO 14812 --- [eurekaServer] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2025-05-23T21:29:36.138+02:00  INFO 14812 --- [eurekaServer] [main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+2025-05-23T21:29:36.172+02:00  INFO 14812 --- [eurekaServer] [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2025-05-23T21:29:36.173+02:00  INFO 14812 --- [eurekaServer] [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2025-05-23T21:29:36.341+02:00  INFO 14812 --- [eurekaServer] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-05-23T21:29:36.432+02:00  INFO 14812 --- [eurekaServer] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EUREKASERVER with eureka with status UP
+2025-05-23T21:29:36.451+02:00  INFO 14812 --- [eurekaServer] [main] c.m.e.EurekaServerApplicationTests       : Started EurekaServerApplicationTests in 5.364 seconds (process running for 6.709)
+2025-05-23T21:29:36.461+02:00  INFO 14812 --- [eurekaServer] [Thread-11] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2025-05-23T21:29:36.462+02:00  INFO 14812 --- [eurekaServer] [Thread-11] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2025-05-23T21:29:36.463+02:00  INFO 14812 --- [eurekaServer] [Thread-11] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2025-05-23T21:29:36.463+02:00  INFO 14812 --- [eurekaServer] [Thread-11] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2025-05-23T21:29:36.464+02:00  INFO 14812 --- [eurekaServer] [Thread-11] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2025-05-23T21:29:36.470+02:00  INFO 14812 --- [eurekaServer] [Thread-11] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2025-05-23T21:29:37.742+02:00  INFO 14812 --- [eurekaServer] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application EUREKASERVER with eureka with status DOWN
+2025-05-23T21:29:37.745+02:00  INFO 14812 --- [eurekaServer] [SpringApplicationShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Shutting down Eureka Server..
+2025-05-23T21:29:37.745+02:00  INFO 14812 --- [eurekaServer] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2025-05-23T21:29:37.746+02:00  INFO 14812 --- [eurekaServer] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2025-05-23T21:29:37.746+02:00  INFO 14812 --- [eurekaServer] [SpringApplicationShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka Service is now shutdown...
+2025-05-23T21:29:37.747+02:00  INFO 14812 --- [eurekaServer] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2025-05-23T21:29:37.748+02:00  INFO 14812 --- [eurekaServer] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2025-05-23T21:29:37.754+02:00  INFO 14812 --- [eurekaServer] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-05-23T21:29:37.755+02:00  INFO 14812 --- [eurekaServer] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-05-23T21:29:37.746+02:00 ERROR 14812 --- [eurekaServer] [Eureka-Jersey3Client-Conn-Cleaner2] c.n.d.s.t.j.EurekaJersey3ClientImpl      : Cannot clean connections
+
+java.lang.IllegalStateException: Client instance has been closed.
+	at org.glassfish.jersey.internal.guava.Preconditions.checkState(Preconditions.java:169) ~[jersey-common-3.1.10.jar:na]
+	at org.glassfish.jersey.client.JerseyClient.checkNotClosed(JerseyClient.java:248) ~[jersey-client-3.1.10.jar:na]
+	at org.glassfish.jersey.client.JerseyClient.getConfiguration(JerseyClient.java:363) ~[jersey-client-3.1.10.jar:na]
+	at org.glassfish.jersey.client.JerseyClient.getConfiguration(JerseyClient.java:54) ~[jersey-client-3.1.10.jar:na]
+	at com.netflix.discovery.shared.transport.jersey3.EurekaJersey3ClientImpl$ConnectionCleanerTask.run(EurekaJersey3ClientImpl.java:338) ~[eureka-client-jersey3-2.0.4.jar:2.0.4]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2025-05-23T21:34:37.432+02:00  INFO 17460 --- [eurekaServer] [restartedMain] c.m.e.EurekaServerApplication            : Starting EurekaServerApplication using Java 22.0.1 with PID 17460 (C:\Users\martel\Desktop\1-dev java\P9-Entrainement\eurekaServer\target\classes started by martel in C:\Users\martel\Desktop\1-dev java\P9-Entrainement\eurekaServer)
+2025-05-23T21:34:37.435+02:00  INFO 17460 --- [eurekaServer] [restartedMain] c.m.e.EurekaServerApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-05-23T21:34:37.490+02:00  INFO 17460 --- [eurekaServer] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-23T21:34:37.490+02:00  INFO 17460 --- [eurekaServer] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-23T21:34:38.727+02:00  INFO 17460 --- [eurekaServer] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8f78fac4-482a-3816-81cc-3120a6b70c6f
+2025-05-23T21:34:39.159+02:00  INFO 17460 --- [eurekaServer] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8761 (http)
+2025-05-23T21:34:39.176+02:00  INFO 17460 --- [eurekaServer] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-23T21:34:39.176+02:00  INFO 17460 --- [eurekaServer] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-23T21:34:39.252+02:00  INFO 17460 --- [eurekaServer] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-23T21:34:39.254+02:00  INFO 17460 --- [eurekaServer] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1762 ms
+2025-05-23T21:34:40.557+02:00  INFO 17460 --- [eurekaServer] [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2025-05-23T21:34:40.559+02:00  INFO 17460 --- [eurekaServer] [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2025-05-23T21:34:40.719+02:00  INFO 17460 --- [eurekaServer] [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2025-05-23T21:34:40.720+02:00  INFO 17460 --- [eurekaServer] [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2025-05-23T21:34:40.931+02:00  INFO 17460 --- [eurekaServer] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-23T21:34:41.929+02:00  INFO 17460 --- [eurekaServer] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-23T21:34:41.998+02:00  WARN 17460 --- [eurekaServer] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-23T21:34:42.027+02:00  INFO 17460 --- [eurekaServer] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-05-23T21:34:42.049+02:00  INFO 17460 --- [eurekaServer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-05-23T21:34:42.050+02:00  INFO 17460 --- [eurekaServer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2025-05-23T21:34:42.051+02:00  INFO 17460 --- [eurekaServer] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1748028882051 with initial instances count: 0
+2025-05-23T21:34:42.106+02:00  INFO 17460 --- [eurekaServer] [restartedMain] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2025-05-23T21:34:42.109+02:00  INFO 17460 --- [eurekaServer] [restartedMain] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+2025-05-23T21:34:42.244+02:00  INFO 17460 --- [eurekaServer] [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2025-05-23T21:34:42.244+02:00  INFO 17460 --- [eurekaServer] [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2025-05-23T21:34:42.245+02:00  INFO 17460 --- [eurekaServer] [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2025-05-23T21:34:42.245+02:00  INFO 17460 --- [eurekaServer] [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2025-05-23T21:34:42.287+02:00  INFO 17460 --- [eurekaServer] [restartedMain] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+2025-05-23T21:34:42.297+02:00  INFO 17460 --- [eurekaServer] [restartedMain] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2025-05-23T21:34:42.298+02:00  INFO 17460 --- [eurekaServer] [restartedMain] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2025-05-23T21:34:42.310+02:00  INFO 17460 --- [eurekaServer] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-05-23T21:34:42.377+02:00  INFO 17460 --- [eurekaServer] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EUREKASERVER with eureka with status UP
+2025-05-23T21:34:42.389+02:00  INFO 17460 --- [eurekaServer] [Thread-15] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2025-05-23T21:34:42.389+02:00  INFO 17460 --- [eurekaServer] [Thread-15] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2025-05-23T21:34:42.389+02:00  INFO 17460 --- [eurekaServer] [Thread-15] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2025-05-23T21:34:42.389+02:00  INFO 17460 --- [eurekaServer] [Thread-15] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2025-05-23T21:34:42.390+02:00  INFO 17460 --- [eurekaServer] [Thread-15] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2025-05-23T21:34:42.391+02:00  INFO 17460 --- [eurekaServer] [Thread-15] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2025-05-23T21:34:42.400+02:00  INFO 17460 --- [eurekaServer] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8761 (http) with context path '/'
+2025-05-23T21:34:42.402+02:00  INFO 17460 --- [eurekaServer] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+2025-05-23T21:34:42.425+02:00  INFO 17460 --- [eurekaServer] [restartedMain] c.m.e.EurekaServerApplication            : Started EurekaServerApplication in 5.467 seconds (process running for 6.289)
+2025-05-23T21:34:43.009+02:00  INFO 17460 --- [eurekaServer] [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-23T21:34:43.009+02:00  INFO 17460 --- [eurekaServer] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-23T21:34:43.010+02:00  INFO 17460 --- [eurekaServer] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-23T21:35:42.390+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-23T21:35:49.151+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status UP (replication=false)
+2025-05-23T21:35:49.805+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status UP (replication=true)
+2025-05-23T21:35:50.035+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status DOWN (replication=false)
+2025-05-23T21:35:50.543+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status DOWN (replication=true)
+2025-05-23T21:35:51.328+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAYAPI/PC-Quentin-Martel.mshome.net:gatewayApi:5005 with status UP (replication=false)
+2025-05-23T21:35:51.839+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAYAPI/PC-Quentin-Martel.mshome.net:gatewayApi:5005 with status UP (replication=true)
+2025-05-23T21:35:52.151+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAYAPI/PC-Quentin-Martel.mshome.net:gatewayApi:5005 with status DOWN (replication=false)
+2025-05-23T21:35:52.663+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAYAPI/PC-Quentin-Martel.mshome.net:gatewayApi:5005 with status DOWN (replication=true)
+2025-05-23T21:35:53.118+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 (replication=false)
+2025-05-23T21:35:53.631+02:00  WARN 17460 --- [eurekaServer] [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000
+2025-05-23T21:35:53.632+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-4] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): PATIENTAPI - PC-Quentin-Martel.mshome.net:patientApi:5000
+2025-05-23T21:35:53.634+02:00  WARN 17460 --- [eurekaServer] [TaskBatchingWorker-target_localhost-2] c.n.eureka.cluster.ReplicationTask       : The replication of task PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000:Cancel@localhost failed with response code 404
+2025-05-23T21:35:53.634+02:00  WARN 17460 --- [eurekaServer] [TaskBatchingWorker-target_localhost-2] c.netflix.eureka.cluster.PeerEurekaNode  : PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000:Cancel@localhost: missing entry.
+2025-05-23T21:35:55.209+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance GATEWAYAPI/PC-Quentin-Martel.mshome.net:gatewayApi:5005 (replication=false)
+2025-05-23T21:35:55.740+02:00  WARN 17460 --- [eurekaServer] [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: GATEWAYAPI/PC-Quentin-Martel.mshome.net:gatewayApi:5005
+2025-05-23T21:35:55.740+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-8] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): GATEWAYAPI - PC-Quentin-Martel.mshome.net:gatewayApi:5005
+2025-05-23T21:35:55.742+02:00  WARN 17460 --- [eurekaServer] [TaskBatchingWorker-target_localhost-19] c.n.eureka.cluster.ReplicationTask       : The replication of task GATEWAYAPI/PC-Quentin-Martel.mshome.net:gatewayApi:5005:Cancel@localhost failed with response code 404
+2025-05-23T21:35:55.742+02:00  WARN 17460 --- [eurekaServer] [TaskBatchingWorker-target_localhost-19] c.netflix.eureka.cluster.PeerEurekaNode  : GATEWAYAPI/PC-Quentin-Martel.mshome.net:gatewayApi:5005:Cancel@localhost: missing entry.
+2025-05-23T21:36:10.507+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAYAPI/PC-Quentin-Martel.mshome.net:gatewayApi:5005 with status UP (replication=false)
+2025-05-23T21:36:11.018+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAYAPI/PC-Quentin-Martel.mshome.net:gatewayApi:5005 with status UP (replication=true)
+2025-05-23T21:36:42.394+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-23T21:36:57.072+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 with status UP (replication=false)
+2025-05-23T21:36:57.582+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 with status UP (replication=true)
+2025-05-23T21:36:58.339+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 with status DOWN (replication=false)
+2025-05-23T21:36:58.845+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 with status DOWN (replication=true)
+2025-05-23T21:37:01.382+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 (replication=false)
+2025-05-23T21:37:01.911+02:00  WARN 17460 --- [eurekaServer] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002
+2025-05-23T21:37:01.912+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-2] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): NOTEAPI - PC-Quentin-Martel.mshome.net:noteApi:5002
+2025-05-23T21:37:01.914+02:00  WARN 17460 --- [eurekaServer] [TaskBatchingWorker-target_localhost-7] c.n.eureka.cluster.ReplicationTask       : The replication of task NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002:Cancel@localhost failed with response code 404
+2025-05-23T21:37:01.914+02:00  WARN 17460 --- [eurekaServer] [TaskBatchingWorker-target_localhost-7] c.netflix.eureka.cluster.PeerEurekaNode  : NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002:Cancel@localhost: missing entry.
+2025-05-23T21:37:04.465+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status UP (replication=false)
+2025-05-23T21:37:04.992+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status UP (replication=true)
+2025-05-23T21:37:05.263+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status DOWN (replication=false)
+2025-05-23T21:37:05.772+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status DOWN (replication=true)
+2025-05-23T21:37:08.369+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 (replication=false)
+2025-05-23T21:37:08.895+02:00  WARN 17460 --- [eurekaServer] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000
+2025-05-23T21:37:08.897+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-3] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): PATIENTAPI - PC-Quentin-Martel.mshome.net:patientApi:5000
+2025-05-23T21:37:08.899+02:00  WARN 17460 --- [eurekaServer] [TaskBatchingWorker-target_localhost-9] c.n.eureka.cluster.ReplicationTask       : The replication of task PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000:Cancel@localhost failed with response code 404
+2025-05-23T21:37:08.899+02:00  WARN 17460 --- [eurekaServer] [TaskBatchingWorker-target_localhost-9] c.netflix.eureka.cluster.PeerEurekaNode  : PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000:Cancel@localhost: missing entry.
+2025-05-23T21:37:42.280+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 with status UP (replication=false)
+2025-05-23T21:37:42.395+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-23T21:37:42.792+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 with status UP (replication=true)
+2025-05-23T21:37:51.080+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status UP (replication=false)
+2025-05-23T21:37:51.609+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status UP (replication=true)
+2025-05-23T21:38:42.395+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-23T21:39:42.397+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-23T21:40:42.400+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-23T21:41:42.403+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-23T21:42:42.413+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-23T21:43:42.421+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-23T21:44:42.435+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 14ms
+2025-05-23T21:45:42.436+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-23T21:46:42.439+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-23T21:47:42.446+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-23T21:48:42.447+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-23T21:49:03.866+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status DOWN (replication=false)
+2025-05-23T21:49:04.393+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status DOWN (replication=true)
+2025-05-23T21:49:06.936+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 (replication=false)
+2025-05-23T21:49:07.463+02:00  WARN 17460 --- [eurekaServer] [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000
+2025-05-23T21:49:07.463+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-9] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): PATIENTAPI - PC-Quentin-Martel.mshome.net:patientApi:5000
+2025-05-23T21:49:07.465+02:00  WARN 17460 --- [eurekaServer] [TaskBatchingWorker-target_localhost-0] c.n.eureka.cluster.ReplicationTask       : The replication of task PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000:Cancel@localhost failed with response code 404
+2025-05-23T21:49:07.466+02:00  WARN 17460 --- [eurekaServer] [TaskBatchingWorker-target_localhost-0] c.netflix.eureka.cluster.PeerEurekaNode  : PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000:Cancel@localhost: missing entry.
+2025-05-23T21:49:08.467+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status UP (replication=false)
+2025-05-23T21:49:08.975+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status UP (replication=true)
+2025-05-23T21:49:42.298+02:00  INFO 17460 --- [eurekaServer] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 6
+2025-05-23T21:49:42.450+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-23T21:50:42.459+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-23T21:51:42.464+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-23T21:52:15.983+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status DOWN (replication=false)
+2025-05-23T21:52:16.489+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status DOWN (replication=true)
+2025-05-23T21:52:19.048+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 (replication=false)
+2025-05-23T21:52:19.561+02:00  WARN 17460 --- [eurekaServer] [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000
+2025-05-23T21:52:19.562+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-6] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): PATIENTAPI - PC-Quentin-Martel.mshome.net:patientApi:5000
+2025-05-23T21:52:19.563+02:00  WARN 17460 --- [eurekaServer] [TaskBatchingWorker-target_localhost-16] c.n.eureka.cluster.ReplicationTask       : The replication of task PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000:Cancel@localhost failed with response code 404
+2025-05-23T21:52:19.563+02:00  WARN 17460 --- [eurekaServer] [TaskBatchingWorker-target_localhost-16] c.netflix.eureka.cluster.PeerEurekaNode  : PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000:Cancel@localhost: missing entry.
+2025-05-23T21:52:20.446+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status UP (replication=false)
+2025-05-23T21:52:20.951+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status UP (replication=true)
+2025-05-23T21:52:25.943+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status DOWN (replication=false)
+2025-05-23T21:52:26.461+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status DOWN (replication=true)
+2025-05-23T21:52:29.032+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 (replication=false)
+2025-05-23T21:52:29.546+02:00  WARN 17460 --- [eurekaServer] [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000
+2025-05-23T21:52:29.546+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-7] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): PATIENTAPI - PC-Quentin-Martel.mshome.net:patientApi:5000
+2025-05-23T21:52:29.547+02:00  WARN 17460 --- [eurekaServer] [TaskBatchingWorker-target_localhost-16] c.n.eureka.cluster.ReplicationTask       : The replication of task PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000:Cancel@localhost failed with response code 404
+2025-05-23T21:52:29.547+02:00  WARN 17460 --- [eurekaServer] [TaskBatchingWorker-target_localhost-16] c.netflix.eureka.cluster.PeerEurekaNode  : PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000:Cancel@localhost: missing entry.
+2025-05-23T21:52:30.268+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status UP (replication=false)
+2025-05-23T21:52:30.778+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status UP (replication=true)
+2025-05-23T21:52:42.464+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-23T21:53:42.478+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 13ms
+2025-05-23T21:54:42.489+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2025-05-23T21:55:42.493+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-23T21:56:42.501+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-23T21:57:42.516+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 14ms
+2025-05-23T21:58:42.529+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 12ms
+2025-05-23T21:59:42.535+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-23T22:00:42.537+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-23T22:01:42.543+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-23T22:02:42.560+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 16ms
+2025-05-23T22:03:42.570+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2025-05-23T22:04:42.299+02:00  INFO 17460 --- [eurekaServer] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 6
+2025-05-23T22:04:42.570+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-23T22:05:42.581+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2025-05-23T22:06:42.582+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-23T22:07:42.584+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-23T22:08:42.585+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-23T22:09:42.589+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-23T22:10:42.595+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-23T22:11:42.607+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 12ms
+2025-05-23T22:12:42.613+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-05-23T22:13:42.626+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 12ms
+2025-05-23T22:14:42.630+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-23T22:15:42.633+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-23T22:16:37.939+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 with status DOWN (replication=false)
+2025-05-23T22:16:38.472+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 with status DOWN (replication=true)
+2025-05-23T22:16:40.992+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 (replication=false)
+2025-05-23T22:16:41.518+02:00  WARN 17460 --- [eurekaServer] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002
+2025-05-23T22:16:41.518+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-2] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): NOTEAPI - PC-Quentin-Martel.mshome.net:noteApi:5002
+2025-05-23T22:16:41.519+02:00  WARN 17460 --- [eurekaServer] [TaskBatchingWorker-target_localhost-14] c.n.eureka.cluster.ReplicationTask       : The replication of task NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002:Cancel@localhost failed with response code 404
+2025-05-23T22:16:41.519+02:00  WARN 17460 --- [eurekaServer] [TaskBatchingWorker-target_localhost-14] c.netflix.eureka.cluster.PeerEurekaNode  : NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002:Cancel@localhost: missing entry.
+2025-05-23T22:16:42.060+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 with status UP (replication=false)
+2025-05-23T22:16:42.575+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 with status UP (replication=true)
+2025-05-23T22:16:42.647+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 13ms
+2025-05-23T22:16:51.595+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 with status DOWN (replication=false)
+2025-05-23T22:16:52.144+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 with status DOWN (replication=true)
+2025-05-23T22:16:54.754+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 (replication=false)
+2025-05-23T22:16:55.274+02:00  WARN 17460 --- [eurekaServer] [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002
+2025-05-23T22:16:55.274+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-7] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): NOTEAPI - PC-Quentin-Martel.mshome.net:noteApi:5002
+2025-05-23T22:16:55.275+02:00  WARN 17460 --- [eurekaServer] [TaskBatchingWorker-target_localhost-15] c.n.eureka.cluster.ReplicationTask       : The replication of task NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002:Cancel@localhost failed with response code 404
+2025-05-23T22:16:55.275+02:00  WARN 17460 --- [eurekaServer] [TaskBatchingWorker-target_localhost-15] c.netflix.eureka.cluster.PeerEurekaNode  : NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002:Cancel@localhost: missing entry.
+2025-05-23T22:16:55.584+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 with status UP (replication=false)
+2025-05-23T22:16:56.094+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 with status UP (replication=true)
+2025-05-23T22:17:42.659+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 12ms
+2025-05-23T22:18:42.664+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-23T22:19:42.310+02:00  INFO 17460 --- [eurekaServer] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 6
+2025-05-23T22:19:42.664+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-23T22:20:42.664+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-23T22:21:42.665+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-23T22:22:42.675+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-23T22:23:42.676+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-23T22:24:42.677+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-23T22:25:42.687+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-23T22:26:42.688+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-23T22:27:42.689+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-23T22:28:42.690+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-23T22:29:42.699+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-23T22:30:42.702+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2025-05-23T22:31:42.710+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-23T22:32:42.710+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-23T22:33:42.711+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-23T22:34:42.309+02:00  INFO 17460 --- [eurekaServer] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 6
+2025-05-23T22:34:42.711+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-23T22:35:42.712+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-23T22:36:42.719+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-23T22:37:42.719+02:00  INFO 17460 --- [eurekaServer] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-23T22:38:02.979+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status DOWN (replication=false)
+2025-05-23T22:38:03.369+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status DOWN (replication=true)
+2025-05-23T22:38:03.385+02:00  WARN 17460 --- [eurekaServer] [TaskBatchingWorker-target_localhost-7] c.n.eureka.cluster.ReplicationTask       : The replication of task PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000:Heartbeat@localhost failed with response code 409
+2025-05-23T22:38:03.385+02:00  WARN 17460 --- [eurekaServer] [TaskBatchingWorker-target_localhost-7] c.netflix.eureka.cluster.PeerEurekaNode  : Peer wants us to take the instance information from it, since the timestamp differs,Id : PC-Quentin-Martel.mshome.net:patientApi:5000 My Timestamp : 1748029950237, Peer's timestamp: 1748032682953
+2025-05-23T22:38:03.385+02:00  INFO 17460 --- [eurekaServer] [TaskBatchingWorker-target_localhost-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 with status DOWN (replication=true)
+2025-05-23T22:38:06.052+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000 (replication=false)
+2025-05-23T22:38:06.559+02:00  WARN 17460 --- [eurekaServer] [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000
+2025-05-23T22:38:06.559+02:00  INFO 17460 --- [eurekaServer] [http-nio-8761-exec-8] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): PATIENTAPI - PC-Quentin-Martel.mshome.net:patientApi:5000
+2025-05-23T22:38:06.560+02:00  WARN 17460 --- [eurekaServer] [TaskBatchingWorker-target_localhost-1] c.n.eureka.cluster.ReplicationTask       : The replication of task PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000:Cancel@localhost failed with response code 404
+2025-05-23T22:38:06.561+02:00  WARN 17460 --- [eurekaServer] [TaskBatchingWorker-target_localhost-1] c.netflix.eureka.cluster.PeerEurekaNode  : PATIENTAPI/PC-Quentin-Martel.mshome.net:patientApi:5000:Cancel@localhost: missing entry.
+2025-05-23T22:38:06.728+02:00  INFO 17460 --- [eurekaServer] [RMI TCP Connection(70)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-05-23T22:38:06.752+02:00  INFO 17460 --- [eurekaServer] [RMI TCP Connection(70)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application EUREKASERVER with eureka with status DOWN
+2025-05-23T22:38:06.784+02:00  INFO 17460 --- [eurekaServer] [RMI TCP Connection(70)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-23T22:38:06.803+02:00  INFO 17460 --- [eurekaServer] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-23T22:38:06.812+02:00  INFO 17460 --- [eurekaServer] [RMI TCP Connection(70)-127.0.0.1] o.s.c.n.e.server.EurekaServerBootstrap   : Shutting down Eureka Server..
+2025-05-23T22:38:06.813+02:00  INFO 17460 --- [eurekaServer] [RMI TCP Connection(70)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2025-05-23T22:38:06.831+02:00  INFO 17460 --- [eurekaServer] [RMI TCP Connection(70)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2025-05-23T22:38:06.831+02:00  INFO 17460 --- [eurekaServer] [RMI TCP Connection(70)-127.0.0.1] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka Service is now shutdown...
+2025-05-23T22:38:06.834+02:00  INFO 17460 --- [eurekaServer] [RMI TCP Connection(70)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2025-05-23T22:38:06.834+02:00  INFO 17460 --- [eurekaServer] [RMI TCP Connection(70)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2025-05-23T22:38:06.849+02:00  INFO 17460 --- [eurekaServer] [RMI TCP Connection(70)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-05-23T22:38:06.849+02:00  INFO 17460 --- [eurekaServer] [RMI TCP Connection(70)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-05-23T22:38:06.816+02:00 ERROR 17460 --- [eurekaServer] [Eureka-Jersey3Client-Conn-Cleaner2] c.n.d.s.t.j.EurekaJersey3ClientImpl      : Cannot clean connections
+
+java.lang.IllegalStateException: Client instance has been closed.
+	at org.glassfish.jersey.internal.guava.Preconditions.checkState(Preconditions.java:169) ~[jersey-common-3.1.10.jar:na]
+	at org.glassfish.jersey.client.JerseyClient.checkNotClosed(JerseyClient.java:248) ~[jersey-client-3.1.10.jar:na]
+	at org.glassfish.jersey.client.JerseyClient.getConfiguration(JerseyClient.java:363) ~[jersey-client-3.1.10.jar:na]
+	at org.glassfish.jersey.client.JerseyClient.getConfiguration(JerseyClient.java:54) ~[jersey-client-3.1.10.jar:na]
+	at com.netflix.discovery.shared.transport.jersey3.EurekaJersey3ClientImpl$ConnectionCleanerTask.run(EurekaJersey3ClientImpl.java:338) ~[eureka-client-jersey3-2.0.4.jar:2.0.4]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+

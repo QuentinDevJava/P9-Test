@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.client.RestTemplate;
 
-import com.mediLabo.ui.Dto.PatientDto;
+import com.mediLabo.ui.dto.PatientDto;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -52,11 +52,15 @@ public class PatientUiController {
 		return "redirect:/patients";
 	}
 
+//TODO
 	@GetMapping("/patients/update/{id}")
 	public String showUpdateForm(@PathVariable int id, Model model) {
 		log.info("UI GET /patients/update/{} - showing update form", id);
 		PatientDto patient = restTemplate.getForObject(patientApiUrl + id, PatientDto.class);
-		model.addAttribute("localDate", patient.getDateAnniversaire());
+
+		model.addAttribute("dateAnniversaire", patient.getDateAnniversaire());
+
+		System.out.println(patient.getDateAnniversaire());
 		model.addAttribute("patient", patient);
 		return "patient-update";
 	}

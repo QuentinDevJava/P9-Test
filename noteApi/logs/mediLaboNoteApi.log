@@ -1,0 +1,690 @@
+2025-05-23T21:28:28.776+02:00  INFO 12952 --- [noteApi] [restartedMain] c.mediLabo.noteApi.NoteApiApplication    : Starting NoteApiApplication using Java 22.0.1 with PID 12952 (C:\Users\martel\Desktop\1-dev java\P9-Entrainement\noteApi\target\classes started by martel in C:\Users\martel\Desktop\1-dev java\P9-Entrainement\noteApi)
+2025-05-23T21:28:28.777+02:00  INFO 12952 --- [noteApi] [restartedMain] c.mediLabo.noteApi.NoteApiApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-05-23T21:28:28.977+02:00  INFO 12952 --- [noteApi] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-05-23T21:28:28.986+02:00  INFO 12952 --- [noteApi] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 MongoDB repository interface.
+2025-05-23T21:28:29.036+02:00  INFO 12952 --- [noteApi] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=67612633-d845-3370-b451-4afdb93dac4d
+2025-05-23T21:28:29.082+02:00  INFO 12952 --- [noteApi] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5002 (http)
+2025-05-23T21:28:29.083+02:00  INFO 12952 --- [noteApi] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-23T21:28:29.084+02:00  INFO 12952 --- [noteApi] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-23T21:28:29.107+02:00  INFO 12952 --- [noteApi] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-23T21:28:29.107+02:00  INFO 12952 --- [noteApi] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 327 ms
+2025-05-23T21:28:29.155+02:00  INFO 12952 --- [noteApi] [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.2.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/22.0.1+8"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@188de24f], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@5163f096, com.mongodb.Jep395RecordCodecProvider@5ff214cc, com.mongodb.KotlinCodecProvider@6ee33396]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@166c0b8], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-05-23T21:28:29.158+02:00  INFO 12952 --- [noteApi] [cluster-ClusterId{value='6830cc5da1c93c5f674fcdaf', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1286000, minRoundTripTimeNanos=0}
+2025-05-23T21:28:29.171+02:00  WARN 12952 --- [noteApi] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-05-23T21:28:29.339+02:00  INFO 12952 --- [noteApi] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-05-23T21:28:29.347+02:00  WARN 12952 --- [noteApi] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-23T21:28:29.351+02:00  INFO 12952 --- [noteApi] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-05-23T21:28:29.373+02:00  INFO 12952 --- [noteApi] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-05-23T21:28:29.375+02:00  INFO 12952 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-05-23T21:28:29.375+02:00  INFO 12952 --- [noteApi] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-23T21:28:29.375+02:00  INFO 12952 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-05-23T21:28:29.375+02:00  INFO 12952 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-05-23T21:28:29.375+02:00  INFO 12952 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-05-23T21:28:29.375+02:00  INFO 12952 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-05-23T21:28:29.375+02:00  INFO 12952 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-05-23T21:28:29.375+02:00  INFO 12952 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-05-23T21:28:29.375+02:00  INFO 12952 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-05-23T21:28:29.400+02:00  INFO 12952 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-05-23T21:28:29.400+02:00  INFO 12952 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-05-23T21:28:29.401+02:00  INFO 12952 --- [noteApi] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-05-23T21:28:29.401+02:00  INFO 12952 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1748028509401 with initial instances count: 3
+2025-05-23T21:28:29.402+02:00  INFO 12952 --- [noteApi] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application NOTEAPI with eureka with status UP
+2025-05-23T21:28:29.402+02:00  INFO 12952 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1748028509402, current=UP, previous=STARTING]
+2025-05-23T21:28:29.402+02:00  INFO 12952 --- [noteApi] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002: registering service...
+2025-05-23T21:28:29.404+02:00  INFO 12952 --- [noteApi] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5002 (http) with context path '/'
+2025-05-23T21:28:29.405+02:00  INFO 12952 --- [noteApi] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 5002
+2025-05-23T21:28:29.412+02:00  INFO 12952 --- [noteApi] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 - registration status: 204
+2025-05-23T21:28:29.415+02:00  INFO 12952 --- [noteApi] [restartedMain] c.mediLabo.noteApi.NoteApiApplication    : Started NoteApiApplication in 0.673 seconds (process running for 663.487)
+2025-05-23T21:28:29.431+02:00  INFO 12952 --- [noteApi] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-05-23T21:28:42.269+02:00  INFO 12952 --- [noteApi] [RMI TCP Connection(18)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-05-23T21:28:42.269+02:00  INFO 12952 --- [noteApi] [RMI TCP Connection(19)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-05-23T21:28:42.269+02:00  INFO 12952 --- [noteApi] [RMI TCP Connection(18)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application NOTEAPI with eureka with status DOWN
+2025-05-23T21:28:42.269+02:00  INFO 12952 --- [noteApi] [RMI TCP Connection(18)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1748028522269, current=DOWN, previous=UP]
+2025-05-23T21:28:42.269+02:00  INFO 12952 --- [noteApi] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002: registering service...
+2025-05-23T21:28:42.270+02:00  INFO 12952 --- [noteApi] [RMI TCP Connection(18)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-23T21:28:42.272+02:00  INFO 12952 --- [noteApi] [RMI TCP Connection(20)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-05-23T21:28:42.273+02:00  INFO 12952 --- [noteApi] [RMI TCP Connection(21)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-05-23T21:28:42.272+02:00  WARN 12952 --- [noteApi] [RMI TCP Connection(18)-127.0.0.1] org.apache.tomcat.util.net.Acceptor      : Interrupt was received while waiting for the acceptor thread [http-nio-5002-Acceptor] to stop
+
+java.lang.InterruptedException: null
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1133) ~[na:na]
+	at java.base/java.util.concurrent.CountDownLatch.await(CountDownLatch.java:276) ~[na:na]
+	at org.apache.tomcat.util.net.Acceptor.stopMillis(Acceptor.java:187) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.tomcat.util.net.NioEndpoint.stopInternal(NioEndpoint.java:305) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.tomcat.util.net.AbstractEndpoint.stop(AbstractEndpoint.java:1432) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.coyote.AbstractProtocol.stop(AbstractProtocol.java:721) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.connector.Connector.stopInternal(Connector.java:1099) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.catalina.core.StandardService.removeConnector(StandardService.java:299) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.lambda$removeServiceConnectors$1(TomcatWebServer.java:173) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.doWithConnectors(TomcatWebServer.java:192) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.removeServiceConnectors(TomcatWebServer.java:170) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stop(TomcatWebServer.java:358) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.stop(WebServerStartStopLifecycle.java:53) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.context.SmartLifecycle.stop(SmartLifecycle.java:120) ~[spring-context-6.2.6.jar:6.2.6]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStop(DefaultLifecycleProcessor.java:463) ~[spring-context-6.2.6.jar:6.2.6]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.stop(DefaultLifecycleProcessor.java:618) ~[spring-context-6.2.6.jar:6.2.6]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.context.support.DefaultLifecycleProcessor.stopBeans(DefaultLifecycleProcessor.java:432) ~[spring-context-6.2.6.jar:6.2.6]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onClose(DefaultLifecycleProcessor.java:323) ~[spring-context-6.2.6.jar:6.2.6]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1172) ~[spring-context-6.2.6.jar:6.2.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126) ~[spring-context-6.2.6.jar:6.2.6]
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160) ~[spring-boot-3.4.5.jar:3.4.5]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:115) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:52) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252) ~[na:na]
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2025-05-23T21:28:42.285+02:00  INFO 12952 --- [noteApi] [RMI TCP Connection(18)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-05-23T21:28:42.290+02:00  INFO 12952 --- [noteApi] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 - registration status: 204
+2025-05-23T21:28:42.291+02:00  INFO 12952 --- [noteApi] [RMI TCP Connection(18)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-05-23T21:28:42.295+02:00  INFO 12952 --- [noteApi] [RMI TCP Connection(18)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 - deregister  status: 200
+2025-05-23T21:28:42.295+02:00  INFO 12952 --- [noteApi] [RMI TCP Connection(18)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-05-23T21:36:51.493+02:00  INFO 22460 --- [noteApi] [main] c.m.noteApi.NoteApiApplicationTests      : Starting NoteApiApplicationTests using Java 22.0.1 with PID 22460 (started by martel in C:\Users\martel\Desktop\1-dev java\P9-Entrainement\noteApi)
+2025-05-23T21:36:51.498+02:00  INFO 22460 --- [noteApi] [main] c.m.noteApi.NoteApiApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2025-05-23T21:36:53.217+02:00  INFO 22460 --- [noteApi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-05-23T21:36:53.379+02:00  INFO 22460 --- [noteApi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 150 ms. Found 1 MongoDB repository interface.
+2025-05-23T21:36:53.624+02:00  INFO 22460 --- [noteApi] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=91133252-c2bc-3a64-957e-8cfcdbb4b149
+2025-05-23T21:36:54.390+02:00  INFO 22460 --- [noteApi] [main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.2.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/22.0.1+8"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@3feebf9c], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@305e95a4, com.mongodb.Jep395RecordCodecProvider@55e42684, com.mongodb.KotlinCodecProvider@18d610e1]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@528e5e38], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-05-23T21:36:54.456+02:00  INFO 22460 --- [noteApi] [cluster-ClusterId{value='6830ce56e1a2705d2d7b50cc', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=55172900, minRoundTripTimeNanos=0}
+2025-05-23T21:36:56.286+02:00  INFO 22460 --- [noteApi] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-05-23T21:36:56.356+02:00  WARN 22460 --- [noteApi] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-23T21:36:56.375+02:00  INFO 22460 --- [noteApi] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-05-23T21:36:56.452+02:00  INFO 22460 --- [noteApi] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-05-23T21:36:56.490+02:00  INFO 22460 --- [noteApi] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-05-23T21:36:56.498+02:00  INFO 22460 --- [noteApi] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-23T21:36:56.514+02:00  INFO 22460 --- [noteApi] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-05-23T21:36:56.516+02:00  INFO 22460 --- [noteApi] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-05-23T21:36:56.516+02:00  INFO 22460 --- [noteApi] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-05-23T21:36:56.516+02:00  INFO 22460 --- [noteApi] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-05-23T21:36:56.516+02:00  INFO 22460 --- [noteApi] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-05-23T21:36:56.516+02:00  INFO 22460 --- [noteApi] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-05-23T21:36:56.516+02:00  INFO 22460 --- [noteApi] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-05-23T21:36:56.981+02:00  INFO 22460 --- [noteApi] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-05-23T21:36:56.982+02:00  INFO 22460 --- [noteApi] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-05-23T21:36:56.985+02:00  INFO 22460 --- [noteApi] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-05-23T21:36:56.989+02:00  INFO 22460 --- [noteApi] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1748029016988 with initial instances count: 1
+2025-05-23T21:36:56.992+02:00  INFO 22460 --- [noteApi] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application NOTEAPI with eureka with status UP
+2025-05-23T21:36:56.993+02:00  INFO 22460 --- [noteApi] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1748029016993, current=UP, previous=STARTING]
+2025-05-23T21:36:56.995+02:00  INFO 22460 --- [noteApi] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002: registering service...
+2025-05-23T21:36:57.015+02:00  INFO 22460 --- [noteApi] [main] c.m.noteApi.NoteApiApplicationTests      : Started NoteApiApplicationTests in 6.245 seconds (process running for 7.93)
+2025-05-23T21:36:57.075+02:00  INFO 22460 --- [noteApi] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 - registration status: 204
+2025-05-23T21:36:58.327+02:00  INFO 22460 --- [noteApi] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application NOTEAPI with eureka with status DOWN
+2025-05-23T21:36:58.328+02:00  INFO 22460 --- [noteApi] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1748029018328, current=DOWN, previous=UP]
+2025-05-23T21:36:58.328+02:00  INFO 22460 --- [noteApi] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002: registering service...
+2025-05-23T21:36:58.341+02:00  INFO 22460 --- [noteApi] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 - registration status: 204
+2025-05-23T21:36:58.349+02:00  INFO 22460 --- [noteApi] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-05-23T21:37:01.363+02:00  INFO 22460 --- [noteApi] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-05-23T21:37:01.384+02:00  INFO 22460 --- [noteApi] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 - deregister  status: 200
+2025-05-23T21:37:01.385+02:00  INFO 22460 --- [noteApi] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-05-23T21:37:39.098+02:00  INFO 22612 --- [noteApi] [restartedMain] c.mediLabo.noteApi.NoteApiApplication    : Starting NoteApiApplication using Java 22.0.1 with PID 22612 (C:\Users\martel\Desktop\1-dev java\P9-Entrainement\noteApi\target\classes started by martel in C:\Users\martel\Desktop\1-dev java\P9-Entrainement\noteApi)
+2025-05-23T21:37:39.100+02:00  INFO 22612 --- [noteApi] [restartedMain] c.mediLabo.noteApi.NoteApiApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-05-23T21:37:39.151+02:00  INFO 22612 --- [noteApi] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-23T21:37:39.151+02:00  INFO 22612 --- [noteApi] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-23T21:37:39.960+02:00  INFO 22612 --- [noteApi] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-05-23T21:37:40.077+02:00  INFO 22612 --- [noteApi] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 112 ms. Found 1 MongoDB repository interface.
+2025-05-23T21:37:40.210+02:00  INFO 22612 --- [noteApi] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=67612633-d845-3370-b451-4afdb93dac4d
+2025-05-23T21:37:40.582+02:00  INFO 22612 --- [noteApi] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5002 (http)
+2025-05-23T21:37:40.593+02:00  INFO 22612 --- [noteApi] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-23T21:37:40.593+02:00  INFO 22612 --- [noteApi] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-23T21:37:40.635+02:00  INFO 22612 --- [noteApi] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-23T21:37:40.636+02:00  INFO 22612 --- [noteApi] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1485 ms
+2025-05-23T21:37:40.978+02:00  INFO 22612 --- [noteApi] [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.2.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/22.0.1+8"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@2192cf73], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@6b316e6d, com.mongodb.Jep395RecordCodecProvider@1bdf692e, com.mongodb.KotlinCodecProvider@7463e8b5]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@433d481d], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-05-23T21:37:41.002+02:00  INFO 22612 --- [noteApi] [cluster-ClusterId{value='6830ce84d81b10320248957c', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=23568000, minRoundTripTimeNanos=0}
+2025-05-23T21:37:41.110+02:00  WARN 22612 --- [noteApi] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-05-23T21:37:41.755+02:00  INFO 22612 --- [noteApi] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-05-23T21:37:41.787+02:00  WARN 22612 --- [noteApi] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-23T21:37:41.793+02:00  INFO 22612 --- [noteApi] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-05-23T21:37:41.851+02:00  INFO 22612 --- [noteApi] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-05-23T21:37:41.872+02:00  INFO 22612 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-05-23T21:37:41.876+02:00  INFO 22612 --- [noteApi] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-23T21:37:41.884+02:00  INFO 22612 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-05-23T21:37:41.885+02:00  INFO 22612 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-05-23T21:37:41.885+02:00  INFO 22612 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-05-23T21:37:41.885+02:00  INFO 22612 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-05-23T21:37:41.885+02:00  INFO 22612 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-05-23T21:37:41.886+02:00  INFO 22612 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-05-23T21:37:41.886+02:00  INFO 22612 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-05-23T21:37:42.229+02:00  INFO 22612 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-05-23T21:37:42.231+02:00  INFO 22612 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-05-23T21:37:42.232+02:00  INFO 22612 --- [noteApi] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-05-23T21:37:42.233+02:00  INFO 22612 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1748029062233 with initial instances count: 1
+2025-05-23T21:37:42.238+02:00  INFO 22612 --- [noteApi] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application NOTEAPI with eureka with status UP
+2025-05-23T21:37:42.239+02:00  INFO 22612 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1748029062239, current=UP, previous=STARTING]
+2025-05-23T21:37:42.240+02:00  INFO 22612 --- [noteApi] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002: registering service...
+2025-05-23T21:37:42.260+02:00  INFO 22612 --- [noteApi] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5002 (http) with context path '/'
+2025-05-23T21:37:42.261+02:00  INFO 22612 --- [noteApi] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 5002
+2025-05-23T21:37:42.280+02:00  INFO 22612 --- [noteApi] [restartedMain] c.mediLabo.noteApi.NoteApiApplication    : Started NoteApiApplication in 3.589 seconds (process running for 4.328)
+2025-05-23T21:37:42.282+02:00  INFO 22612 --- [noteApi] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 - registration status: 204
+2025-05-23T21:37:42.778+02:00  INFO 22612 --- [noteApi] [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-23T21:37:42.778+02:00  INFO 22612 --- [noteApi] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-23T21:37:42.779+02:00  INFO 22612 --- [noteApi] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-23T21:41:02.509+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-1] c.m.n.restController.NoteController      : Receive GET /api/notes/patient/TestNone: NoteApi use RestController to send list of NoteDto
+2025-05-23T21:41:02.621+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-2] c.m.n.restController.NoteController      : Receive GET /api/notes/patient/TestBorderline: NoteApi use RestController to send list of NoteDto
+2025-05-23T21:41:02.647+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-3] c.m.n.restController.NoteController      : Receive GET /api/notes/patient/TestInDanger: NoteApi use RestController to send list of NoteDto
+2025-05-23T21:41:02.676+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-4] c.m.n.restController.NoteController      : Receive GET /api/notes/patient/TestEarlyOnset: NoteApi use RestController to send list of NoteDto
+2025-05-23T21:42:41.899+02:00  INFO 22612 --- [noteApi] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-23T21:47:41.907+02:00  INFO 22612 --- [noteApi] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-23T21:49:14.833+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-7] c.m.n.restController.NoteController      : Receive GET /api/notes/patient/TestNone: NoteApi use RestController to send list of NoteDto
+2025-05-23T21:49:48.476+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-5] c.m.n.restController.NoteController      : Receive GET /api/notes/patient/TestNone: NoteApi use RestController to send list of NoteDto
+2025-05-23T21:49:48.516+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-8] c.m.n.restController.NoteController      : Receive GET /api/notes/patient/TestBorderline: NoteApi use RestController to send list of NoteDto
+2025-05-23T21:49:48.547+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-9] c.m.n.restController.NoteController      : Receive GET /api/notes/patient/TestInDanger: NoteApi use RestController to send list of NoteDto
+2025-05-23T21:49:48.575+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-10] c.m.n.restController.NoteController      : Receive GET /api/notes/patient/TestEarlyOnset: NoteApi use RestController to send list of NoteDto
+2025-05-23T21:49:55.718+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-1] c.m.n.restController.NoteController      : Receive PUT /api/notes/termesAnalyse/TestManuel - NoteApi use RestController get number of trigger terms in list of NoteDto for this patient 
+2025-05-23T21:50:07.738+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-2] c.m.n.restController.NoteController      : Receive PUT /api/notes/termesAnalyse/TestNone - NoteApi use RestController get number of trigger terms in list of NoteDto for this patient 
+2025-05-23T21:50:26.492+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-3] c.m.n.restController.NoteController      : Receive GET /api/notes/patient/TestNone: NoteApi use RestController to send list of NoteDto
+2025-05-23T21:50:26.518+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-4] c.m.n.restController.NoteController      : Receive GET /api/notes/patient/TestBorderline: NoteApi use RestController to send list of NoteDto
+2025-05-23T21:50:26.542+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-6] c.m.n.restController.NoteController      : Receive GET /api/notes/patient/TestInDanger: NoteApi use RestController to send list of NoteDto
+2025-05-23T21:50:26.559+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-7] c.m.n.restController.NoteController      : Receive GET /api/notes/patient/TestEarlyOnset: NoteApi use RestController to send list of NoteDto
+2025-05-23T21:50:40.906+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-5] c.m.n.restController.NoteController      : Receive GET /api/notes/patient/TestNone: NoteApi use RestController to send list of NoteDto
+2025-05-23T21:50:40.936+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-8] c.m.n.restController.NoteController      : Receive GET /api/notes/patient/TestBorderline: NoteApi use RestController to send list of NoteDto
+2025-05-23T21:50:40.959+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-9] c.m.n.restController.NoteController      : Receive GET /api/notes/patient/TestInDanger: NoteApi use RestController to send list of NoteDto
+2025-05-23T21:50:40.987+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-10] c.m.n.restController.NoteController      : Receive GET /api/notes/patient/TestEarlyOnset: NoteApi use RestController to send list of NoteDto
+2025-05-23T21:50:41.009+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-1] c.m.n.restController.NoteController      : Receive GET /api/notes/patient/a: NoteApi use RestController to send list of NoteDto
+2025-05-23T21:50:45.449+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-2] c.m.n.restController.NoteController      : Receive GET /api/notes/patient/a: NoteApi use RestController to send list of NoteDto
+2025-05-23T21:50:51.894+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-3] c.m.n.restController.NoteController      : Receive POST:NoteDto(id=null, fkPatientNom=a, note=afsgsfg fe f) - NoteApi use RestController to create NoteDto
+2025-05-23T21:50:52.001+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-4] c.m.n.restController.NoteController      : Receive GET /api/notes/patient/TestNone: NoteApi use RestController to send list of NoteDto
+2025-05-23T21:50:52.032+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-6] c.m.n.restController.NoteController      : Receive GET /api/notes/patient/TestBorderline: NoteApi use RestController to send list of NoteDto
+2025-05-23T21:50:52.054+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-7] c.m.n.restController.NoteController      : Receive GET /api/notes/patient/TestInDanger: NoteApi use RestController to send list of NoteDto
+2025-05-23T21:50:52.082+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-5] c.m.n.restController.NoteController      : Receive GET /api/notes/patient/TestEarlyOnset: NoteApi use RestController to send list of NoteDto
+2025-05-23T21:50:52.095+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-8] c.m.n.restController.NoteController      : Receive GET /api/notes/patient/a: NoteApi use RestController to send list of NoteDto
+2025-05-23T21:52:41.913+02:00  INFO 22612 --- [noteApi] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-23T21:57:41.926+02:00  INFO 22612 --- [noteApi] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-23T22:02:41.942+02:00  INFO 22612 --- [noteApi] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-23T22:07:41.949+02:00  INFO 22612 --- [noteApi] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-23T22:12:41.961+02:00  INFO 22612 --- [noteApi] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-23T22:15:15.031+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-3] c.m.n.restController.NoteController      : Receive GET /api/notes/patient/TestNone: NoteApi use RestController to send list of NoteDto
+2025-05-23T22:15:15.104+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-4] c.m.n.restController.NoteController      : Receive GET /api/notes/patient/TestBorderline: NoteApi use RestController to send list of NoteDto
+2025-05-23T22:15:15.118+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-6] c.m.n.restController.NoteController      : Receive GET /api/notes/patient/TestInDanger: NoteApi use RestController to send list of NoteDto
+2025-05-23T22:15:15.128+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-7] c.m.n.restController.NoteController      : Receive GET /api/notes/patient/TestEarlyOnset: NoteApi use RestController to send list of NoteDto
+2025-05-23T22:15:17.172+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-5] c.m.n.restController.NoteController      : Receive GET /api/notes/patient/TestEarlyOnset: NoteApi use RestController to send list of NoteDto
+2025-05-23T22:15:22.672+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-8] c.m.n.restController.NoteController      : Receive GET /api/notes/patient/TestNone: NoteApi use RestController to send list of NoteDto
+2025-05-23T22:15:22.707+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-10] c.m.n.restController.NoteController      : Receive GET /api/notes/patient/TestBorderline: NoteApi use RestController to send list of NoteDto
+2025-05-23T22:15:22.738+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-9] c.m.n.restController.NoteController      : Receive GET /api/notes/patient/TestInDanger: NoteApi use RestController to send list of NoteDto
+2025-05-23T22:15:22.767+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-2] c.m.n.restController.NoteController      : Receive GET /api/notes/patient/TestEarlyOnset: NoteApi use RestController to send list of NoteDto
+2025-05-23T22:16:37.876+02:00  INFO 22612 --- [noteApi] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 5 class path changes (3 additions, 1 deletion, 1 modification)
+2025-05-23T22:16:37.894+02:00  INFO 22612 --- [noteApi] [Thread-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application NOTEAPI with eureka with status DOWN
+2025-05-23T22:16:37.895+02:00  INFO 22612 --- [noteApi] [Thread-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1748031397895, current=DOWN, previous=UP]
+2025-05-23T22:16:37.896+02:00  INFO 22612 --- [noteApi] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002: registering service...
+2025-05-23T22:16:37.911+02:00  INFO 22612 --- [noteApi] [Thread-1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-23T22:16:37.935+02:00  INFO 22612 --- [noteApi] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-23T22:16:37.942+02:00  INFO 22612 --- [noteApi] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 - registration status: 204
+2025-05-23T22:16:37.965+02:00  INFO 22612 --- [noteApi] [Thread-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-05-23T22:16:40.976+02:00  INFO 22612 --- [noteApi] [Thread-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-05-23T22:16:40.994+02:00  INFO 22612 --- [noteApi] [Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 - deregister  status: 200
+2025-05-23T22:16:40.994+02:00  INFO 22612 --- [noteApi] [Thread-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-05-23T22:16:41.126+02:00  INFO 22612 --- [noteApi] [restartedMain] c.mediLabo.noteApi.NoteApiApplication    : Starting NoteApiApplication using Java 22.0.1 with PID 22612 (C:\Users\martel\Desktop\1-dev java\P9-Entrainement\noteApi\target\classes started by martel in C:\Users\martel\Desktop\1-dev java\P9-Entrainement\noteApi)
+2025-05-23T22:16:41.127+02:00  INFO 22612 --- [noteApi] [restartedMain] c.mediLabo.noteApi.NoteApiApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-05-23T22:16:41.469+02:00  INFO 22612 --- [noteApi] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-05-23T22:16:41.479+02:00  INFO 22612 --- [noteApi] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 1 MongoDB repository interface.
+2025-05-23T22:16:41.556+02:00  INFO 22612 --- [noteApi] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=67612633-d845-3370-b451-4afdb93dac4d
+2025-05-23T22:16:41.617+02:00  INFO 22612 --- [noteApi] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5002 (http)
+2025-05-23T22:16:41.618+02:00  INFO 22612 --- [noteApi] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-23T22:16:41.618+02:00  INFO 22612 --- [noteApi] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-23T22:16:41.637+02:00  INFO 22612 --- [noteApi] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-23T22:16:41.637+02:00  INFO 22612 --- [noteApi] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 508 ms
+2025-05-23T22:16:41.708+02:00  INFO 22612 --- [noteApi] [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.2.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/22.0.1+8"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@1a256d8f], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@6b316e6d, com.mongodb.Jep395RecordCodecProvider@1bdf692e, com.mongodb.KotlinCodecProvider@7463e8b5]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@3fc2ead4], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-05-23T22:16:41.717+02:00  INFO 22612 --- [noteApi] [cluster-ClusterId{value='6830d7a9d81b10320248957e', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=8444800, minRoundTripTimeNanos=0}
+2025-05-23T22:16:41.734+02:00  WARN 22612 --- [noteApi] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-05-23T22:16:41.977+02:00  INFO 22612 --- [noteApi] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-05-23T22:16:41.990+02:00  WARN 22612 --- [noteApi] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-23T22:16:41.994+02:00  INFO 22612 --- [noteApi] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-05-23T22:16:42.019+02:00  INFO 22612 --- [noteApi] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-05-23T22:16:42.021+02:00  INFO 22612 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-05-23T22:16:42.021+02:00  INFO 22612 --- [noteApi] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-23T22:16:42.022+02:00  INFO 22612 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-05-23T22:16:42.022+02:00  INFO 22612 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-05-23T22:16:42.022+02:00  INFO 22612 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-05-23T22:16:42.022+02:00  INFO 22612 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-05-23T22:16:42.022+02:00  INFO 22612 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-05-23T22:16:42.023+02:00  INFO 22612 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-05-23T22:16:42.023+02:00  INFO 22612 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-05-23T22:16:42.049+02:00  INFO 22612 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-05-23T22:16:42.050+02:00  INFO 22612 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-05-23T22:16:42.050+02:00  INFO 22612 --- [noteApi] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-05-23T22:16:42.050+02:00  INFO 22612 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1748031402050 with initial instances count: 3
+2025-05-23T22:16:42.051+02:00  INFO 22612 --- [noteApi] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application NOTEAPI with eureka with status UP
+2025-05-23T22:16:42.051+02:00  INFO 22612 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1748031402051, current=UP, previous=STARTING]
+2025-05-23T22:16:42.051+02:00  INFO 22612 --- [noteApi] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002: registering service...
+2025-05-23T22:16:42.062+02:00  INFO 22612 --- [noteApi] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 - registration status: 204
+2025-05-23T22:16:42.069+02:00  INFO 22612 --- [noteApi] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5002 (http) with context path '/'
+2025-05-23T22:16:42.070+02:00  INFO 22612 --- [noteApi] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 5002
+2025-05-23T22:16:42.082+02:00  INFO 22612 --- [noteApi] [restartedMain] c.mediLabo.noteApi.NoteApiApplication    : Started NoteApiApplication in 1.002 seconds (process running for 2344.13)
+2025-05-23T22:16:42.100+02:00  INFO 22612 --- [noteApi] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-05-23T22:16:51.578+02:00  INFO 22612 --- [noteApi] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 4 class path changes (1 addition, 0 deletions, 3 modifications)
+2025-05-23T22:16:51.579+02:00  INFO 22612 --- [noteApi] [Thread-7] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application NOTEAPI with eureka with status DOWN
+2025-05-23T22:16:51.580+02:00  INFO 22612 --- [noteApi] [Thread-7] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1748031411580, current=DOWN, previous=UP]
+2025-05-23T22:16:51.580+02:00  INFO 22612 --- [noteApi] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002: registering service...
+2025-05-23T22:16:51.582+02:00  INFO 22612 --- [noteApi] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-23T22:16:51.601+02:00  INFO 22612 --- [noteApi] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 - registration status: 204
+2025-05-23T22:16:51.697+02:00  INFO 22612 --- [noteApi] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-23T22:16:51.727+02:00  INFO 22612 --- [noteApi] [Thread-7] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-05-23T22:16:54.736+02:00  INFO 22612 --- [noteApi] [Thread-7] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-05-23T22:16:54.759+02:00  INFO 22612 --- [noteApi] [Thread-7] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 - deregister  status: 200
+2025-05-23T22:16:54.760+02:00  INFO 22612 --- [noteApi] [Thread-7] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-05-23T22:16:54.943+02:00  INFO 22612 --- [noteApi] [restartedMain] c.mediLabo.noteApi.NoteApiApplication    : Starting NoteApiApplication using Java 22.0.1 with PID 22612 (C:\Users\martel\Desktop\1-dev java\P9-Entrainement\noteApi\target\classes started by martel in C:\Users\martel\Desktop\1-dev java\P9-Entrainement\noteApi)
+2025-05-23T22:16:54.943+02:00  INFO 22612 --- [noteApi] [restartedMain] c.mediLabo.noteApi.NoteApiApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-05-23T22:16:55.145+02:00  INFO 22612 --- [noteApi] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-05-23T22:16:55.152+02:00  INFO 22612 --- [noteApi] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 MongoDB repository interface.
+2025-05-23T22:16:55.195+02:00  INFO 22612 --- [noteApi] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=67612633-d845-3370-b451-4afdb93dac4d
+2025-05-23T22:16:55.230+02:00  INFO 22612 --- [noteApi] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5002 (http)
+2025-05-23T22:16:55.231+02:00  INFO 22612 --- [noteApi] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-23T22:16:55.231+02:00  INFO 22612 --- [noteApi] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-23T22:16:55.250+02:00  INFO 22612 --- [noteApi] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-23T22:16:55.250+02:00  INFO 22612 --- [noteApi] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 305 ms
+2025-05-23T22:16:55.296+02:00  INFO 22612 --- [noteApi] [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.2.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/22.0.1+8"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@5710fd6f], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@6b316e6d, com.mongodb.Jep395RecordCodecProvider@1bdf692e, com.mongodb.KotlinCodecProvider@7463e8b5]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@7246eb87], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-05-23T22:16:55.299+02:00  INFO 22612 --- [noteApi] [cluster-ClusterId{value='6830d7b7d81b10320248957f', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1747600, minRoundTripTimeNanos=0}
+2025-05-23T22:16:55.311+02:00  WARN 22612 --- [noteApi] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-05-23T22:16:55.512+02:00  INFO 22612 --- [noteApi] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-05-23T22:16:55.527+02:00  WARN 22612 --- [noteApi] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-23T22:16:55.529+02:00  INFO 22612 --- [noteApi] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-05-23T22:16:55.550+02:00  INFO 22612 --- [noteApi] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-05-23T22:16:55.550+02:00  INFO 22612 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-05-23T22:16:55.550+02:00  INFO 22612 --- [noteApi] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-23T22:16:55.550+02:00  INFO 22612 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-05-23T22:16:55.550+02:00  INFO 22612 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-05-23T22:16:55.552+02:00  INFO 22612 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-05-23T22:16:55.552+02:00  INFO 22612 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-05-23T22:16:55.552+02:00  INFO 22612 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-05-23T22:16:55.552+02:00  INFO 22612 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-05-23T22:16:55.552+02:00  INFO 22612 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-05-23T22:16:55.572+02:00  INFO 22612 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-05-23T22:16:55.573+02:00  INFO 22612 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-05-23T22:16:55.573+02:00  INFO 22612 --- [noteApi] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-05-23T22:16:55.573+02:00  INFO 22612 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1748031415573 with initial instances count: 3
+2025-05-23T22:16:55.574+02:00  INFO 22612 --- [noteApi] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application NOTEAPI with eureka with status UP
+2025-05-23T22:16:55.574+02:00  INFO 22612 --- [noteApi] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1748031415574, current=UP, previous=STARTING]
+2025-05-23T22:16:55.574+02:00  INFO 22612 --- [noteApi] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002: registering service...
+2025-05-23T22:16:55.576+02:00  INFO 22612 --- [noteApi] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5002 (http) with context path '/'
+2025-05-23T22:16:55.577+02:00  INFO 22612 --- [noteApi] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 5002
+2025-05-23T22:16:55.585+02:00  INFO 22612 --- [noteApi] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 - registration status: 204
+2025-05-23T22:16:55.589+02:00  INFO 22612 --- [noteApi] [restartedMain] c.mediLabo.noteApi.NoteApiApplication    : Started NoteApiApplication in 0.683 seconds (process running for 2357.638)
+2025-05-23T22:16:55.602+02:00  INFO 22612 --- [noteApi] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-05-23T22:21:55.557+02:00  INFO 22612 --- [noteApi] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-23T22:26:55.563+02:00  INFO 22612 --- [noteApi] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-23T22:28:51.255+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-23T22:28:51.255+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-23T22:28:51.259+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-05-23T22:28:51.273+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-2] c.m.noteApi.controller.NoteController    : Receive GET /api/notes/patient/TestNone: NoteApi use RestController to send list of NoteDto
+2025-05-23T22:28:51.311+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-1] c.m.noteApi.controller.NoteController    : Receive GET /api/notes/patient/TestBorderline: NoteApi use RestController to send list of NoteDto
+2025-05-23T22:28:51.321+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-3] c.m.noteApi.controller.NoteController    : Receive GET /api/notes/patient/TestInDanger: NoteApi use RestController to send list of NoteDto
+2025-05-23T22:28:51.333+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-4] c.m.noteApi.controller.NoteController    : Receive GET /api/notes/patient/TestEarlyOnset: NoteApi use RestController to send list of NoteDto
+2025-05-23T22:28:51.351+02:00  INFO 22612 --- [noteApi] [http-nio-5002-exec-5] c.m.noteApi.controller.NoteController    : Receive GET /api/notes/patient/ad: NoteApi use RestController to send list of NoteDto
+2025-05-23T22:31:55.568+02:00  INFO 22612 --- [noteApi] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-23T22:36:55.571+02:00  INFO 22612 --- [noteApi] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-23T22:38:08.950+02:00  INFO 22612 --- [noteApi] [RMI TCP Connection(66)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-05-23T22:38:08.958+02:00  INFO 22612 --- [noteApi] [RMI TCP Connection(66)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application NOTEAPI with eureka with status DOWN
+2025-05-23T22:38:08.960+02:00  INFO 22612 --- [noteApi] [RMI TCP Connection(66)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1748032688960, current=DOWN, previous=UP]
+2025-05-23T22:38:08.961+02:00  INFO 22612 --- [noteApi] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002: registering service...
+2025-05-23T22:38:08.965+02:00  INFO 22612 --- [noteApi] [RMI TCP Connection(66)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-23T22:38:08.991+02:00  INFO 22612 --- [noteApi] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-23T22:38:09.011+02:00  INFO 22612 --- [noteApi] [RMI TCP Connection(66)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-05-23T22:38:09.031+02:00  INFO 22612 --- [noteApi] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on POST request for "http://localhost:8761/eureka/apps/NOTEAPI": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/NOTEAPI": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:752)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:216)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$2(RestTemplateTransportClientFactory.java:145)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
+	... 21 more
+
+2025-05-23T22:38:09.032+02:00  WARN 22612 --- [noteApi] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/NOTEAPI": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+2025-05-23T22:38:09.054+02:00  INFO 22612 --- [noteApi] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/NOTEAPI": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/NOTEAPI": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:752)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:216)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$2(RestTemplateTransportClientFactory.java:145)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
+	... 22 more
+
+2025-05-23T22:38:09.055+02:00  WARN 22612 --- [noteApi] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/NOTEAPI": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+2025-05-23T22:38:09.055+02:00  WARN 22612 --- [noteApi] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 - registration failed Cannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105) ~[eureka-client-2.0.4.jar:2.0.4]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2025-05-23T22:38:09.078+02:00  WARN 22612 --- [noteApi] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.discovery.InstanceInfoReplicator     : There was a problem with the instance info replicator
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105) ~[eureka-client-2.0.4.jar:2.0.4]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2025-05-23T22:38:09.080+02:00  INFO 22612 --- [noteApi] [RMI TCP Connection(66)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-05-23T22:38:09.092+02:00  INFO 22612 --- [noteApi] [RMI TCP Connection(66)-127.0.0.1] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:100)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:796)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:746)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1473)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:705)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1466)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1219)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1180)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:115)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:52)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:752)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:216)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$2(RestTemplateTransportClientFactory.java:145)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
+	... 69 more
+
+2025-05-23T22:38:09.093+02:00  WARN 22612 --- [noteApi] [RMI TCP Connection(66)-127.0.0.1] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+2025-05-23T22:38:09.094+02:00 ERROR 22612 --- [noteApi] [RMI TCP Connection(66)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTEAPI/PC-Quentin-Martel.mshome.net:noteApi:5002 - de-registration failedCannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900) ~[eureka-client-2.0.4.jar:2.0.4]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389) ~[spring-cloud-context-4.2.1.jar:4.2.1]
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136) ~[spring-cloud-context-4.2.1.jar:4.2.1]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:796) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:746) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1473) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:705) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1466) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1219) ~[spring-context-6.2.6.jar:6.2.6]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1180) ~[spring-context-6.2.6.jar:6.2.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126) ~[spring-context-6.2.6.jar:6.2.6]
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160) ~[spring-boot-3.4.5.jar:3.4.5]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:115) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:52) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252) ~[na:na]
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2025-05-23T22:38:09.099+02:00  INFO 22612 --- [noteApi] [RMI TCP Connection(66)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

@@ -46,6 +46,7 @@ public class NoteServiceImpl implements NoteService {
 
 	@Override
 	public int getNumberOfTermsByPatient(String patientName) {
+
 		List<NoteDto> notes = getNotesByNom(patientName);
 
 		List<String> termes = List.of("hémoglobine a1c", "microalbumine", "taille", "poids", "fumeur", "fumeuse",

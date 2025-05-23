@@ -1,0 +1,20 @@
+package com.mediLabo.patientApi.service;
+
+import java.util.List;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+
+import com.mediLabo.patientApi.dto.NoteDto;
+
+import lombok.extern.slf4j.Slf4j;
+
+//@FeignClient(url = "http://localhost:5005", value = "noteApi")
+@Slf4j
+@FeignClient(name = "noteApi")
+public interface ApiClient {
+	@GetMapping("api/notes/patient/{patientNom}")
+
+	List<NoteDto> getNoteDtos(@PathVariable String patientNom);
+}

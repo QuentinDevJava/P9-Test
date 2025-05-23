@@ -1,9 +1,11 @@
 eclipse.preferences.version=1
-org.springframework.ide.eclipse.boot.wizard.PopularityTracker.actuator=1
-org.springframework.ide.eclipse.boot.wizard.PopularityTracker.cloud-config-client=1
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.actuator=2
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.cloud-config-client=2
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.cloud-eureka-server=1
 org.springframework.ide.eclipse.boot.wizard.PopularityTracker.cloud-feign=1
 org.springframework.ide.eclipse.boot.wizard.PopularityTracker.data-mongodb=1
-org.springframework.ide.eclipse.boot.wizard.PopularityTracker.devtools=2
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.devtools=3
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.lombok=1
 org.springframework.ide.eclipse.boot.wizard.PopularityTracker.mysql=1
 org.springframework.ide.eclipse.boot.wizard.PopularityTracker.webflux=1
 org.springframework.ide.eclipse.boot.wizard.initializr.url=https\://start.spring.io\n

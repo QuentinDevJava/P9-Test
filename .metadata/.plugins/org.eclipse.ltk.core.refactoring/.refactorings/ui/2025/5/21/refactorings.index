@@ -13,3 +13,4 @@
 1747993095306	Rename type 'PatientController'
 1747999580808	Rename local variable 'note'
 1747999598328	Rename local variable 'updatedNote'
+1748030715484	Rename package 'com.mediLabo.ui.Dto'

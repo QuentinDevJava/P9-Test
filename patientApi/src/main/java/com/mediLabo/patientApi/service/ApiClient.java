@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.mediLabo.patientApi.dto.NoteDto;
 
-@FeignClient(url = "http://localhost:5005", value = "noteApi")
+@FeignClient(name = "noteapi")
 public interface ApiClient {
 	@GetMapping("api/notes/patient/{patientNom}")
 	List<NoteDto> getNoteDtos(@PathVariable String patientNom);

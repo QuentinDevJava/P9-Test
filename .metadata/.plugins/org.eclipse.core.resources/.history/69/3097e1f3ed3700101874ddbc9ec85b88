@@ -1,0 +1,25 @@
+server:
+  port: 5005  # Port du gateway
+
+spring:
+  application:
+    name: gatewayApi
+
+  cloud:
+    discovery:
+      enabled: true
+    gateway:
+      routes:
+        - id: patientApi
+          uri: lb://patientApi
+          predicates:
+            - Path=/api/patients/**
+        - id: noteApi
+          uri: lb://patientApi
+          predicates:
+            - Path=/api/notes/**
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

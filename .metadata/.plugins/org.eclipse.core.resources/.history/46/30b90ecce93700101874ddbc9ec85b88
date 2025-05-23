@@ -1,0 +1,15 @@
+server:
+  port: 5005  # Port du gateway
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: PATIENTAPI
+          uri: lb://patientapi
+          predicates:
+            - Path=/api/patients/**
+        - id: NOTEAPI
+          uri: lb://noteapi
+          predicates:
+            - Path=/api/notes/**

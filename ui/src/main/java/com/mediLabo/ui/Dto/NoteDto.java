@@ -1,4 +1,4 @@
-package com.mediLabo.ui.Dto;
+package com.mediLabo.ui.dto;
 
 import lombok.Data;
 

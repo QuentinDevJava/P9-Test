@@ -12,3 +12,5 @@
 1747844073814	Delete element
 1747844086007	Delete element
 1747844099617	Rename resource 'application-prod.yml'
+1748031396377	Rename package 'com.mediLabo.noteApi.restController'
+1748031409680	Rename package 'com.mediLabo.noteApi.Controller'

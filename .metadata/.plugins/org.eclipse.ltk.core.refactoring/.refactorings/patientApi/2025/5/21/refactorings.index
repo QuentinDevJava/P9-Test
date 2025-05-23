@@ -15,3 +15,5 @@
 1747996156725	Rename type 'ApiResponseDto'
 1747997055046	Delete element
 1747998524416	Rename method 'toDto'
+1748029933524	Rename package 'com.mediLabo.patientApi.restControllers'
+1748029944027	Rename package 'com.mediLabo.patientApi.rcontrollers'
