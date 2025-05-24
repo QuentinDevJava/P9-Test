@@ -1,19 +1,2 @@
-1747814490188	Delete element
-1747814509717	Rename package 'com.mediLabo.dto'
-1747814521514	Rename package 'com.mediLabo.entities'
-1747814535929	Rename package 'com.mediLabo.mapper'
-1747814550176	Rename package 'com.mediLabo.repository'
-1747814559708	Rename package 'com.mediLabo.restControllers'
-1747814569031	Rename package 'com.mediLabo.service'
-1747814700691	Rename type 'PatientServiceApplication'
-1747814715694	Rename package 'com.mediLabo.patientMs'
-1747814731438	Rename type 'PatientServiceApplicationTests'
-1747816338439	Copy package
-1747829528919	Copy package
-1747842500539	Copy file
-1747992636170	Rename field 'mapper'
-1747996156725	Rename type 'ApiResponseDto'
-1747997055046	Delete element
-1747998524416	Rename method 'toDto'
-1748029933524	Rename package 'com.mediLabo.patientApi.restControllers'
-1748029944027	Rename package 'com.mediLabo.patientApi.rcontrollers'
+1748102108250	Rename resource 'application-prod.yml'
+1748102116999	Rename resource 'application-local.yml'
